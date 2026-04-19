@@ -1,15 +1,18 @@
 const API_BASE = import.meta.env.VITE_API_BASE || '/api'
 const STATIC_BASE = '/data'
 
-/** 从静态 JSON 读取，失败则返回 null */
-async function fetchStatic<T>(path: string): Promise<T | null> {
-  try {
-    const res = await fetch(`${STATIC_BASE}/${path}`)
-    if (!res.ok) return null
-    return res.json()
-  } catch {
-    return null
+/** 内存缓存，避免同一文件被重复请求 */
+const staticCache = new Map<string, Promise<unknown>>()
+
+/** 从静态 JSON 读取，内存缓存防重复请求，失败则返回 null */
+function fetchStatic<T>(path: string): Promise<T | null> {
+  if (!staticCache.has(path)) {
+    const promise = fetch(`${STATIC_BASE}/${path}`)
+      .then(res => (res.ok ? res.json() : null))
+      .catch(() => null)
+    staticCache.set(path, promise)
   }
+  return staticCache.get(path) as Promise<T | null>
 }
 
 export type Region = 'overseas' | 'domestic'
