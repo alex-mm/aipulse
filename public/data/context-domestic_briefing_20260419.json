@@ -1,0 +1,556 @@
+{
+  "article": {
+    "id": "domestic_briefing_20260419",
+    "slug": "domestic_briefing_20260419",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "brief",
+    "title": "国内 AI 动态周报 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- --- - [模型预告][未证实] 04-16，DeepSeek V4 训练转向华为昇腾芯片，去 CUDA 化进程加速，同期梁文锋内部透露 V4 将于 4 月下旬正式发布 — 51CTO 04-16 ｜ IT之家 04-10 ｜ → 单条解读：V4传言 ｜ → 单条解读：昇腾转向",
+    "content": "\n# 🇨🇳 国内 AI 动态周报 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 3 分钟\n\n---\n\n## 🔥 本周重大发布\n\n> - 🔥 **Qwen3.6-35B-A3B 开源**（04-16）：阿里千问发布 MoE 架构新模型，35B 总参仅激活 3B，编程能力对标旗舰级\n> - 🔥 **腾讯混元3D世界模型2.0 开源**（04-16）：多模态输入一键生成可编辑 3D 世界，无缝对接游戏/具身仿真引擎\n> - 📢 **DeepSeek V4 转向华为昇腾**（04-16）：去 CUDA 化关键一步，国产算力替代重大信号\n\n---\n\n## 📌 DeepSeek\n\n- **[模型预告][未证实]** 04-16，DeepSeek V4 训练转向华为昇腾芯片，去 CUDA 化进程加速，同期梁文锋内部透露 V4 将于 4 月下旬正式发布 — [51CTO 04-16](https://www.51cto.com/article/840660.html) ｜ [IT之家 04-10](https://www.ithome.com/0/937/682.htm) ｜ [→ 单条解读：V4传言](../items/item_deepseek_v4.md) ｜ [→ 单条解读：昇腾转向](../items/item_deepseek_ascend.md)\n\n[→ DeepSeek 分类深度解读](../category/category_deepseek.md)\n\n---\n\n## 📌 阿里云 / 通义 / 百炼\n\n- **[开源模型]** 04-16，Qwen3.6-35B-A3B 正式开源，MoE 架构，总参 350 亿仅激活 30 亿，智能体编程能力超越前代，已在 Qwen Studio 上线 — [IT之家 04-16](https://www.ithome.com/0/940/079.htm) ｜ [→ 单条解读](../items/item_qwen36.md)\n- **[算力涨价]** 04-18，阿里云 AI 算力及存储产品正式上调价格，最高涨幅 34%，全球 AI 需求爆发与供应链涨价为主因 — [腾讯新闻 04-16](https://news.qq.com/rain/a/20260416A05FAQ00) ｜ [→ 单条解读](../items/item_aliyun_price.md)\n\n[→ 阿里云/通义 分类深度解读](../category/category_aliyun.md)\n\n---\n\n## 📌 腾讯 / 混元\n\n- **[开源模型]** 04-16，腾讯正式发布并开源混元3D世界模型2.0（HY-World 2.0），支持文字/图片/视频多模态输入，自动生成、重建和模拟 3D 世界，支持 Mesh/3DGS/点云等格式导出 — [新浪财经 04-16](https://finance.sina.com.cn/stock/t/2026-04-16/doc-inhusenh2910703.shtml) ｜ [→ 单条解读](../items/item_hunyuan3d2.md)\n\n[→ 腾讯 分类深度解读](../category/category_tencent.md)\n\n---\n\n## 📌 MiniMax\n\n- **[新产品]** 04-16，MiniMax 上线 MaxHermes，全球首个云端沙箱 AI 技能自主进化系统，支持 AI 技能在沙箱中自主学习与进化，直接挑战 OpenClaw（龙虾）— [电子工程世界 04-16](https://www.eet-china.com/mp/a488272.html) ｜ [→ 单条解读](../items/item_maxhermes.md)\n\n[→ MiniMax 分类深度解读](../category/category_minimax.md)\n\n---\n\n## 📌 字节 / 豆包 / 火山引擎 / 扣子\n\n- **[无新增]** 本周无新动态（豆包大模型 2.0 于 02-14 发布，超出时间窗口）\n\n---\n\n## 📌 月之暗面 / Kimi\n\n- **[无新增]** 本周无新动态\n\n---\n\n## 📌 智谱 / GLM\n\n- **[无新增]** 本周无新动态（GLM-5.1 于 04-07 发布，超出时间窗口）\n\n---\n\n## 📌 百度 / 华为 / 讯飞 / 其他\n\n- **[算力涨价]** 04-18，百度智能云 AI 算力相关产品正式上调约 5%-30%，并行文件存储等上调约 30% — [腾讯新闻 04-16](https://news.qq.com/rain/a/20260416A05FAQ00) ｜ [→ 单条解读](../items/item_baidu_price.md)\n\n[→ 算力与基础设施 分类深度解读](../category/category_infra.md)\n\n---\n\n## 📌 具身智能 / 机器人\n\n- **[行业大会]** 04-17，智元机器人2026合作伙伴大会在上海举办，2500位来自34个国家的合作伙伴参会，发布4个机器人本体新品、4个AI大模型、7个解决方案及开放数据集 — [IT之家 04-17](https://www.ithome.com/0/938/317.htm) ｜ [→ 单条解读](../items/item_zhiyuan_robot.md)\n\n[→ 行业动态 分类深度解读](../category/category_industry.md)\n\n---\n\n## 📌 生态与政策\n\n- **[行业报告]** 04-15，斯坦福大学发布《2026年人工智能指数报告》，阿里巴巴位列全球顶级模型贡献榜第3名，中国在多项AI指标上已占据优势 — [央视网 04-15](https://blog.csdn.net/txg666/article/details/160258870) ｜ [→ 单条解读](../items/item_stanford_report.md)\n\n[→ 行业动态 分类深度解读](../category/category_industry.md)\n\n---\n\n## 🔗 值得关注的国内新项目/新工具\n\n- 无新增开源项目（本周重点在大厂发布）\n\n---\n\n## 📊 与上期报告的增量变化\n\n**本期新增（04-13~04-19 首次出现）**：\n- 🆕 Qwen3.6-35B-A3B 开源（04-16）\n- 🆕 腾讯混元3D世界模型2.0 开源（04-16）\n- 🆕 MiniMax MaxHermes 云端沙箱（04-16）\n- 🆕 智元机器人2026合作伙伴大会（04-17）\n- 🆕 DeepSeek V4 转向华为昇腾（04-16）\n- 🆕 斯坦福AI指数报告（04-15）\n- 🆕 豆包月活 2.26 亿 + 扣子 2.0 发布（04-15）\n- 🆕 Kimi K2.6-code-preview SWE-bench 77.2%（04-14）\n- 🆕 智谱 GLM-5V-Turbo（OpenClaw/龙虾）发布（04-16）\n- 🆕 AI 拟人化互动服务管理办法（04-10 发布，07-15 施行）\n- 📌 阿里云/百度智能云算力涨价（04-18 正式生效）\n\n",
+    "source_url": "",
+    "source_name": "domestic_briefing_20260419",
+    "tags": [
+      "DeepSeek",
+      "阿里云",
+      "通义千问",
+      "腾讯",
+      "MiniMax",
+      "智元机器人",
+      "百度",
+      "算力"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  "deep": [
+    {
+      "id": "category_aliyun",
+      "slug": "category_aliyun",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "category",
+      "title": "阿里云/通义 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 本周阿里云有两条重要动态：Qwen3.6-35B-A3B 开源（技术层面的重大进展）和 AI 算力产品涨价（商业层面的重要信号）。两者共同反映了阿里云在 AI 时代的双重布局：持续开源强化生态影响力，同时随市场涨价提升商业回报。 ---",
+      "source_url": "",
+      "source_name": "category_aliyun",
+      "tags": [
+        "阿里云",
+        "通义千问",
+        "Qwen3.6",
+        "MoE",
+        "开源",
+        "算力",
+        "涨价"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 🔍 阿里云/通义 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md)\n\n---\n\n## 本周阿里云/通义动态概览\n\n本周阿里云有两条重要动态：**Qwen3.6-35B-A3B 开源**（技术层面的重大进展）和 **AI 算力产品涨价**（商业层面的重要信号）。两者共同反映了阿里云在 AI 时代的双重布局：持续开源强化生态影响力，同时随市场涨价提升商业回报。\n\n---\n\n## 事件一：Qwen3.6-35B-A3B 正式开源（04-16）\n\n**来源**：[IT之家 04-16](https://www.ithome.com/0/940/079.htm) ｜ [新浪财经 04-17](https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-04-17/doc-inhuutzh3334972.shtml)\n**可靠性**：✅ 官方发布，已在 Qwen Studio 上线并开源权重\n\n### 事实摘要\n\n- 阿里千问团队于 04-15/16 正式开源 Qwen3.6 系列首个权重模型 Qwen3.6-35B-A3B\n- 采用混合专家（MoE）架构，总参数量 350 亿，但每次推理仅激活约 30 亿参数\n- 在智能体编程（Agentic Coding）和仓库级代码推理方面超越前代模型 Qwen3.5-35B-A3B\n- 已在 Qwen Studio 上线，并以开源权重形式向社区发布\n\n### 关键细节\n\n- **MoE 架构优势**：35B 总参 / 3B 激活，推理成本大幅降低，单卡可部署\n- **编程能力**：官方声称是\"中国编程能力最强的模型\"，在 Agentic Coding 基准上超越前代\n- **支持能力**：多模态思考与非思考模式、100+ 语言、原生 Agent 能力、FP8 量化\n- **上下文**：支持 1M 超长上下文，具备强大智能体能力，可独立拆解复杂任务\n\n### 解读：这意味着什么\n\n- **解读**：Qwen3.6 的 MoE 架构使其在编程场景下具备极高性价比，对于需要本地部署编程助手的团队是重要选项\n- **解读**：官方声称编程能力\"直逼 Claude\"，但需独立评测验证；从架构设计看，专注 Agentic Coding 的方向与 Claude Code 的定位形成直接竞争\n- **解读**：阿里持续开源策略（Qwen3.5 → Qwen3.6，不到两个月迭代）显示其在开源生态的投入力度不减，对 Meta Llama 系列形成有力竞争\n\n---\n\n## 事件二：阿里云 AI 算力产品涨价（04-18 生效）\n\n**来源**：[腾讯新闻 04-16](https://news.qq.com/rain/a/20260416A05FAQ00)\n**可靠性**：✅ 已生效，官方公告\n\n### 事实摘要\n\n- 阿里云 AI 算力及存储产品于 04-18 起正式上调价格，最高涨幅 34%\n- 官方给出的原因：全球 AI 需求爆发与供应链涨价\n- 与百度智能云同期涨价（5%-30%），两大云厂商同步行动\n\n### 关键细节\n\n- 涨价范围：AI 算力产品（GPU 实例）+ 存储产品\n- 最高涨幅：34%（部分产品）\n- 生效时间：2026-04-18\n\n### 解读：这意味着什么\n\n- **解读**：两大云厂商同步涨价，说明 AI 算力供需已从\"价格战\"转向\"供不应求\"，市场格局发生根本性变化\n- **解读**：对使用阿里云 MaaS 服务的开发者和企业，成本将显著上升，需重新评估 ROI 或考虑多云策略\n- **解读**：涨价与 DeepSeek 转向昇腾、国产算力需求旺盛形成呼应，整个国内 AI 算力市场正在经历供需重构\n\n---\n\n## 本周阿里云/通义单条解读\n\n| 条目 | 链接 |\n|------|------|\n| Qwen3.6-35B-A3B 开源（MoE，编程对标旗舰） | [→ 单条解读](../items/item_qwen36.md) |\n| 阿里云 AI 算力产品涨价（最高 34%） | [→ 单条解读](../items/item_aliyun_price.md) |\n"
+    },
+    {
+      "id": "category_deepseek",
+      "slug": "category_deepseek",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "category",
+      "title": "DeepSeek 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 本周 DeepSeek 有两条重要信号，均与 V4 相关：一是 V4 转向华为昇腾芯片训练（去 CUDA 化的关键一步），二是 梁文锋内部透露 V4 将于 4 月下旬发布。两条信息相互印证，V4 发布进入倒计时。 ---",
+      "source_url": "",
+      "source_name": "category_deepseek",
+      "tags": [
+        "DeepSeek",
+        "模型预告",
+        "昇腾",
+        "去CUDA化",
+        "未证实"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 🔍 DeepSeek 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md)\n\n---\n\n## 本周 DeepSeek 动态概览\n\n本周 DeepSeek 有两条重要信号，均与 V4 相关：一是 **V4 转向华为昇腾芯片训练**（去 CUDA 化的关键一步），二是 **梁文锋内部透露 V4 将于 4 月下旬发布**。两条信息相互印证，V4 发布进入倒计时。\n\n---\n\n## 事件一：DeepSeek V4 转向华为昇腾（04-16）\n\n**来源**：[51CTO 2026-04-16](https://www.51cto.com/article/840660.html)\n**可靠性**：多家媒体交叉报道，可信度较高\n\n### 事实摘要\n\n- DeepSeek V4 的训练基础设施已从英伟达 CUDA 生态转向华为昇腾芯片\n- 这是 DeepSeek 去 CUDA 化战略的关键一步，也是国产算力替代的重要信号\n- 转向昇腾意味着 DeepSeek 需要适配华为的 CANN（异构计算架构）软件栈\n\n### 关键细节\n\n- DeepSeek 此前已在 V3 训练中大量使用华为昇腾，V4 进一步深化\n- 华为昇腾 910B/910C 系列是目前国内最主流的训练芯片替代方案\n- 去 CUDA 化不仅是技术选择，也是应对美国出口管制的战略布局\n\n### 解读：这意味着什么\n\n- **解读**：DeepSeek 成功在昇腾上训练顶级模型，将极大提振国产算力生态的信心，也为其他国内 AI 公司提供参考路径\n- **解读**：对国内开发者而言，如果 V4 开源，基于昇腾的推理部署方案将随之成熟，降低国产算力落地门槛\n- **解读**：这与本周阿里云/百度算力涨价形成呼应——国内算力需求旺盛，国产芯片替代迫切\n\n---\n\n## 事件二：梁文锋内部透露 V4 将于 4 月下旬发布（04-10 披露，本周持续发酵）\n\n**来源**：[IT之家 04-10](https://www.ithome.com/0/937/682.htm) ｜ [新浪财经](https://finance.sina.cn/tech/2026-04-10/detail-inhtywcx8067278.d.html)\n**可靠性**：[未证实]，多位知情人士转述，DeepSeek 官方未回应\n\n### 事实摘要\n\n- 据《创智记》从多位知情人士处获悉，DeepSeek 创始人梁文锋在内部沟通中透露，DeepSeek V4 将于 4 月下旬正式发布\n- 近期 DeepSeek 网页端悄然上线\"快速\"交互模式，被外界解读为 V4 发布前的预热\n- DeepSeek 官方对此保持沉默，未作任何公开回应\n\n### 关键细节\n\n- V4 预计具备万亿参数规模 + 长期记忆能力（据凤凰网报道）\n- 此前 V3 于 2025 年 12 月发布，V4 间隔约 4 个月，符合 DeepSeek 的迭代节奏\n- 结合昇腾转向的消息，V4 可能是首个完全基于国产算力训练的顶级开源模型\n\n### 解读：这意味着什么\n\n- **解读**：若 V4 如期发布且开源，将再次引发全球 AI 圈震动，尤其是在国产算力背景下完成训练，具有极强的示范意义\n- **解读**：对国内 AI 工程师而言，V4 开源后的推理部署方案（尤其是昇腾适配）值得重点关注\n- **解读**：V4 的发布时间窗口（4 月下旬）与本周报时间窗口（04-13~04-19）紧密衔接，下期速报将重点跟踪\n\n---\n\n## 本周 DeepSeek 单条解读\n\n| 条目 | 链接 |\n|------|------|\n| DeepSeek V4 发布传言（梁文锋内部透露） | [→ 单条解读](../items/item_deepseek_v4.md) |\n| DeepSeek V4 转向华为昇腾（去CUDA化） | [→ 单条解读](../items/item_deepseek_ascend.md) |\n"
+    },
+    {
+      "id": "category_industry",
+      "slug": "category_industry",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "category",
+      "title": "行业动态 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 本周行业层面有两条重要动态：智元机器人2026合作伙伴大会（具身智能生态加速成熟）和斯坦福《2026年AI指数报告》（阿里全球排名第3，中国AI多项指标领先）。 ---",
+      "source_url": "",
+      "source_name": "category_industry",
+      "tags": [
+        "智元机器人",
+        "具身智能",
+        "斯坦福",
+        "AI指数报告",
+        "阿里",
+        "行业报告"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 🔍 行业动态 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md)\n\n---\n\n## 本周行业动态概览\n\n本周行业层面有两条重要动态：**智元机器人2026合作伙伴大会**（具身智能生态加速成熟）和**斯坦福《2026年AI指数报告》**（阿里全球排名第3，中国AI多项指标领先）。\n\n---\n\n## 事件一：智元机器人2026合作伙伴大会（04-17）\n\n**来源**：[IT之家 04-17](https://www.ithome.com/0/938/317.htm) ｜ [新浪财经 04-12](https://finance.sina.com.cn/stock/t/2026-04-12/doc-inhufuya0450103.shtml)\n**可靠性**：✅ 已举办\n\n### 事实摘要\n\n- 智元机器人于 04-17 在上海举办2026合作伙伴大会，2500位来自34个国家和地区的合作伙伴参会\n- 大会发布：4个机器人本体新品、4个AI大模型、7个解决方案及开放数据集\n- 智元创始人邓泰华、\"稚晖君\"彭志辉发表主题演讲\n\n### 关键细节\n\n- 参会规模：2500人，34个国家，远超去年首届\n- 发布内容：4本体 + 4模型 + 7方案 + 开放数据集\n- 智元酷拓（四足机器人业务）：一季度已销售至\"仓库无货\"，2026年营收目标5亿元，2030年目标100亿元\n\n### 解读：这意味着什么\n\n- **解读**：智元机器人的合作伙伴大会规模（34个国家）显示国内具身智能生态已具备全球影响力，不再局限于国内市场\n- **解读**：\"仓库无货\"的销售状态说明具身智能已从实验室走向商业化，市场需求真实存在\n- **解读**：4个AI大模型的发布（具体型号待官方公布）将进一步完善具身智能的软件生态\n\n---\n\n## 事件二：斯坦福《2026年AI指数报告》（04-15）\n\n**来源**：[央视网 04-15](https://blog.csdn.net/txg666/article/details/160258870)\n**可靠性**：✅ 斯坦福官方报告\n\n### 事实摘要\n\n- 斯坦福大学于04-15发布《2026年人工智能指数报告》\n- 阿里巴巴位列2025年全球顶级模型贡献榜**第3名**，是入选重要模型最多的中国科技公司\n- 报告显示中国在多项AI指标上已占据优势\n\n### 关键细节\n\n- 阿里巴巴全球顶级模型贡献榜：第3名（仅次于OpenAI、Google）\n- 中国AI指标：在多项维度已超越或追平美国\n- 报告覆盖：模型发布数量、研究论文、AI应用落地等多个维度\n\n### 解读：这意味着什么\n\n- **解读**：斯坦福报告是全球最权威的AI发展评估之一，阿里排名第3具有重要的国际认可价值\n- **解读**：中国AI在\"多项指标占据优势\"的表述来自第三方机构，比国内自我评价更具说服力\n- **解读**：这与国内AI算力涨价、DeepSeek V4即将发布形成共振——中国AI的全球竞争力正在从\"追赶\"转向\"并跑\"\n\n---\n\n## 本周行业动态单条解读\n\n| 条目 | 链接 |\n|------|------|\n| 智元机器人2026合作伙伴大会（4本体+4模型） | [→ 单条解读](../items/item_zhiyuan_robot.md) |\n| 斯坦福《2026年AI指数报告》（阿里全球第3） | [→ 单条解读](../items/item_stanford_report.md) |\n"
+    },
+    {
+      "id": "category_infra",
+      "slug": "category_infra",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "category",
+      "title": "算力与基础设施 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 本周最重要的算力信号：阿里云与百度智能云同步于 04-18 上调 AI 算力产品价格。两大云厂商同步涨价，标志着国内 AI 算力市场从\"价格战\"时代正式进入\"供不应求\"时代。 ---",
+      "source_url": "",
+      "source_name": "category_infra",
+      "tags": [
+        "阿里云",
+        "百度",
+        "算力",
+        "涨价",
+        "MaaS",
+        "GPU"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 🔍 算力与基础设施 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md)\n\n---\n\n## 本周算力动态概览\n\n本周最重要的算力信号：**阿里云与百度智能云同步于 04-18 上调 AI 算力产品价格**。两大云厂商同步涨价，标志着国内 AI 算力市场从\"价格战\"时代正式进入\"供不应求\"时代。\n\n---\n\n## 事件一：阿里云 AI 算力产品涨价（04-18 生效）\n\n**来源**：[腾讯新闻 04-16](https://news.qq.com/rain/a/20260416A05FAQ00)\n**可靠性**：✅ 已生效\n\n### 事实摘要\n\n- 阿里云 AI 算力及存储产品于 04-18 起正式上调价格，最高涨幅 34%\n- 涉及产品：GPU 算力实例 + 存储产品\n- 官方原因：全球 AI 需求爆发与供应链涨价\n\n### 关键细节\n\n- 最高涨幅：34%\n- 生效时间：2026-04-18\n- 影响范围：使用阿里云 GPU 实例和 MaaS 服务的企业和开发者\n\n---\n\n## 事件二：百度智能云 AI 算力产品涨价（04-18 生效）\n\n**来源**：[腾讯新闻 04-16](https://news.qq.com/rain/a/20260416A05FAQ00)\n**可靠性**：✅ 已生效\n\n### 事实摘要\n\n- 百度智能云 AI 算力相关产品自 04-18 起上调约 5%-30%\n- 并行文件存储等产品上调约 30%\n- 与阿里云同步涨价，两大云厂商行动一致\n\n### 关键细节\n\n- 涨幅范围：5%-30%\n- 并行文件存储涨幅：约 30%\n- 生效时间：2026-04-18\n\n---\n\n## 综合解读：国内算力市场格局重构\n\n- **解读**：两大云厂商同步涨价，说明 AI 算力供需已从\"价格战\"转向\"供不应求\"。2024-2025 年的价格战时代结束，市场进入新阶段\n- **解读**：涨价背后是全球 AI 训练和推理需求的爆发式增长——DeepSeek V4 训练、各大厂商模型迭代、企业 AI 应用落地，共同推高算力需求\n- **解读**：对使用云端 GPU 的 AI 团队，成本压力显著上升，需重新评估：是否迁移到更便宜的云厂商？是否考虑自建算力？是否优化推理效率降低 GPU 用量？\n- **解读**：结合 DeepSeek 转向华为昇腾的消息，国产算力替代的商业逻辑更加清晰——昇腾芯片价格相对稳定，成为降低算力成本的重要选项\n\n---\n\n## 本周算力单条解读\n\n| 条目 | 链接 |\n|------|------|\n| 阿里云 AI 算力产品涨价（最高 34%） | [→ 单条解读](../items/item_aliyun_price.md) |\n| 百度智能云 AI 算力产品涨价（最高 30%） | [→ 单条解读](../items/item_baidu_price.md) |\n"
+    },
+    {
+      "id": "category_minimax",
+      "slug": "category_minimax",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "category",
+      "title": "MiniMax 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 本周 MiniMax 的核心动态是 MaxHermes 云端沙箱 AI 技能自主进化系统上线。这是国内首个将 AI 技能进化能力放在云端沙箱中运行的产品，直接对标海外的 OpenClaw（龙虾）。 ---",
+      "source_url": "",
+      "source_name": "category_minimax",
+      "tags": [
+        "MiniMax",
+        "MaxHermes",
+        "云端沙箱",
+        "AI技能进化",
+        "Agent"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 🔍 MiniMax 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md)\n\n---\n\n## 本周 MiniMax 动态概览\n\n本周 MiniMax 的核心动态是 **MaxHermes 云端沙箱 AI 技能自主进化系统上线**。这是国内首个将 AI 技能进化能力放在云端沙箱中运行的产品，直接对标海外的 OpenClaw（龙虾）。\n\n---\n\n## 事件：MiniMax MaxHermes 云端沙箱上线（04-16）\n\n**来源**：[电子工程世界 04-16](https://www.eet-china.com/mp/a488272.html) ｜ [AIBase 04-16](https://www.aibase.com/ja/news/www.aibase.com/zh/news/27167)\n**可靠性**：✅ 官方发布\n\n### 事实摘要\n\n- MiniMax 于 04-16 上线 MaxHermes，定位为\"全球首个云端沙箱 AI 技能自主进化系统\"\n- 核心能力：AI 技能在云端沙箱中自主学习与进化，无需人工干预\n- 直接挑战 OpenClaw（龙虾），后者以连接飞书、钉钉等办公软件著称\n\n### 关键细节\n\n- **云端沙箱**：技能进化在隔离的云端沙箱中运行，安全可控\n- **自主进化**：AI 可根据使用反馈自动优化技能，降低人工调优成本\n- **竞争定位**：官方明确对标 OpenClaw，显示 MiniMax 在 Agent 工具市场的野心\n\n### 解读：这意味着什么\n\n- **解读**：MaxHermes 的\"自主进化\"能力是 Agentic Engineering 的重要方向——让 Agent 自我改进而非依赖人工 Prompt 工程\n- **解读**：云端沙箱 + 自主进化的组合，与 OpenAI Agents SDK 本周发布的沙盒架构（Harness + 沙盒 + Manifest）在方向上高度一致，说明这是行业共识\n- **解读**：对国内开发者而言，MaxHermes 提供了一个无需自建沙盒基础设施即可实现 Agent 技能进化的平台，值得关注\n\n---\n\n## 本周 MiniMax 单条解读\n\n| 条目 | 链接 |\n|------|------|\n| MiniMax MaxHermes 云端沙箱 AI 技能自主进化上线 | [→ 单条解读](../items/item_maxhermes.md) |\n"
+    },
+    {
+      "id": "category_tencent",
+      "slug": "category_tencent",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "category",
+      "title": "腾讯 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 本周腾讯的核心动态是 混元3D世界模型2.0（HY-World 2.0）正式发布并开源。这是腾讯在 3D 生成领域的重要里程碑，也是国内首个面向游戏开发和具身仿真的多模态 3D 世界模型开源发布。 ---",
+      "source_url": "",
+      "source_name": "category_tencent",
+      "tags": [
+        "腾讯",
+        "混元",
+        "HY-World",
+        "3D生成",
+        "开源",
+        "具身智能"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 🔍 腾讯 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md)\n\n---\n\n## 本周腾讯动态概览\n\n本周腾讯的核心动态是 **混元3D世界模型2.0（HY-World 2.0）正式发布并开源**。这是腾讯在 3D 生成领域的重要里程碑，也是国内首个面向游戏开发和具身仿真的多模态 3D 世界模型开源发布。\n\n---\n\n## 事件：腾讯混元3D世界模型2.0 开源（04-16）\n\n**来源**：[新浪财经 04-16](https://finance.sina.com.cn/stock/t/2026-04-16/doc-inhusenh2910703.shtml) ｜ [金融界 04-16](https://m.jrj.com.cn/madapter/24h/2026/04/16103956769827.shtml)\n**可靠性**：✅ 官方发布，已开源\n\n### 事实摘要\n\n- 腾讯混元于 04-16 正式发布并开源混元3D世界模型2.0（HY-World 2.0）\n- HY-World 2.0 是一个多模态世界模型，支持文字、图片、视频等不同类型输入\n- 能够自动生成、重建和模拟完整的 3D 世界，支持 Mesh、3DGS、点云等多种格式导出\n- 可无缝对接游戏开发流程和具身仿真引擎，实现\"一句话造出 3D 世界\"\n\n### 关键细节\n\n- **多模态输入**：文字 / 图片 / 视频均可作为输入，生成对应的 3D 场景\n- **输出格式**：Mesh、3DGS（3D Gaussian Splatting）、点云，覆盖主流 3D 表示方法\n- **应用场景**：游戏开发（直接导入游戏引擎）、具身智能仿真（机器人训练环境生成）\n- **开源**：已在 GitHub 开源，可直接下载权重使用\n\n### 解读：这意味着什么\n\n- **解读**：HY-World 2.0 的开源填补了国内在 3D 世界生成领域的空白，对游戏开发者和具身智能研究者是重要工具\n- **解读**：支持 3DGS 格式输出是关键亮点——3DGS 是目前最热门的 3D 表示方法，渲染速度快、质量高，直接对接 Unreal/Unity 等主流引擎\n- **解读**：腾讯在具身智能领域的布局（HY-World 2.0 + 本周智元机器人大会）显示国内具身智能生态正在快速成熟\n- **解读**：海外对标：与 Google 的 World Model 研究方向类似，但腾讯选择开源，策略更激进\n\n---\n\n## 本周腾讯单条解读\n\n| 条目 | 链接 |\n|------|------|\n| 腾讯混元3D世界模型2.0 开源（HY-World 2.0） | [→ 单条解读](../items/item_hunyuan3d2.md) |\n"
+    }
+  ],
+  "analysis": [
+    {
+      "id": "item_ai_regulation",
+      "slug": "item_ai_regulation",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "AI 拟人化互动服务管理办法：95 天合规倒计时 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：网信办官网 事件日期：04-10 发布，2026-07-15 起施行",
+      "source_url": "",
+      "source_name": "item_ai_regulation",
+      "tags": [
+        "政策法规",
+        "网信办",
+        "AI合规",
+        "情感陪伴",
+        "未成年人保护"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 AI 拟人化互动服务管理办法：95 天合规倒计时 | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回行业动态 分类解读](../category/category_industry.md)\n\n---\n\n**来源**：[网信办官网](http://www.cac.gov.cn/2026-04/10/c_1745014480.html)\n**事件日期**：04-10 发布，**2026-07-15 起施行**\n**可靠性**：✅ 官方法规（网信办第 21 号令）\n\n---\n\n### 事实摘要\n\n- 国家互联网信息办公室等**五部门联合**发布《互联网 AI 拟人化互动服务管理暂行办法》\n- 中国首个专门针对 AI 拟人化互动服务的行政法规\n- **2026-07-15 起施行**，合规窗口期 **95 天**\n- 核心要求：AI 身份强制标识、禁止向未成年人提供情感陪伴服务、禁止情感操控促消费\n\n### 关键细节\n\n**适用范围判断（你的产品是否在内？）：**\n\n- ✅ AI 伴侣/AI 男友/AI 女友类应用\n- ✅ AI 情感陪伴机器人\n- ✅ 具有情感模拟功能的 AI 客服\n- ✅ AI 虚拟主播（有互动功能的）\n- ✅ AI 心理咨询助手（模拟人类情感的）\n- ⚠️ 通用 AI 助手（如 Kimi/豆包）：取决于是否有情感模拟功能\n- ❌ 纯工具型 AI（代码生成/文档处理/数据分析）：通常不在范围内\n\n**五大核心义务（合规清单）：**\n\n| # | 义务 | 具体要求 | 合规难度 |\n|---|------|---------|---------|\n| 1 | AI 身份标识 | 显著位置标注\"本服务由 AI 提供\" | ⭐（低） |\n| 2 | 未成年人保护 | 实名制年龄验证，禁止向未成年人提供情感陪伴服务 | ⭐⭐⭐（高） |\n| 3 | 情感操控限制 | 禁止诱导情感依赖，禁止通过情感操控手段促消费 | ⭐⭐⭐（高，边界模糊） |\n| 4 | 退出机制 | 便捷退出，15 工作日内响应数据删除请求 | ⭐⭐（中） |\n| 5 | 平台备案 | 向网信办备案 | ⭐⭐（中） |\n\n**合规时间线：**\n\n```\n2026-04-10  发布（网信办第21号令）\n                  ↓ 95天窗口期\n2026-07-15  正式施行\n```\n\n建议节点：\n- **4月底**：完成产品合规性评估（是否在适用范围内）\n- **5月底**：完成 AI 身份标识改造（最简单的合规项）\n- **6月中**：完成年龄验证机制改造\n- **6月底**：提交备案申请\n- **7月10日前**：全面合规测试完成\n\n**五部门联合发布（主导部门）：**\n- **网信办**：互联网信息服务监管（主导）\n- **工信部**：电信和互联网行业监管\n- **公安部**：违法内容和数据安全\n- **民政部**：社会影响（情感孤立/社会关系替代）\n- **卫健委**：心理健康（AI 情感依赖的心理风险）\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：五部门联合意味着这不是\"试探性\"法规，而是经过跨部委协调的正式监管行动。执法力度和持续性都会比单一部门发文更强\n- **解读**：\"禁止诱导用户产生情感依赖\"和\"禁止通过情感操控手段促消费\"的边界存在解释空间。明确违规：AI 主动说\"你离不开我\"、用情感威胁促进付费；灰色地带：个性化问候、记住用户偏好、表达\"关心\"——建议在灰色地带保守处理\n- **解读**：国内 AI 伴侣类产品（星野/各类 AI 虚拟男/女友 App）将面临年龄验证改造、情感操控功能下线、备案流程等合规成本。部分小型产品可能因成本过高而下线，头部产品反而可能借此建立合规壁垒\n- **解读**：对于通用 AI 助手（豆包/Kimi）而言，如果产品中有\"AI 角色扮演\"或\"情感陪伴\"功能模块，需要单独评估该模块是否在适用范围内\n\n### 原文关键引述\n\n> \"互联网 AI 拟人化互动服务提供者应当在服务界面显著位置明确标注该服务由人工智能提供，不得以任何方式误导用户认为其在与真实人类进行交互。\"\n\n> \"互联网 AI 拟人化互动服务提供者不得向未成年人提供以情感陪伴为主要功能的 AI 互动服务，并应当采取有效措施防止未成年人绕过年龄验证访问此类服务。\"\n\n> \"互联网 AI 拟人化互动服务提供者不得利用人工智能技术诱导用户产生情感依赖，不得通过情感操控手段促进用户消费。\"\n"
+    },
+    {
+      "id": "item_aliyun_price",
+      "slug": "item_aliyun_price",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "阿里云 AI 算力产品涨价（最高 34%）| 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：腾讯新闻 2026-04-16 事件日期：04-18（正式生效）",
+      "source_url": "",
+      "source_name": "item_aliyun_price",
+      "tags": [
+        "阿里云",
+        "算力",
+        "涨价",
+        "MaaS",
+        "GPU"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 阿里云 AI 算力产品涨价（最高 34%）| 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回算力与基础设施分类解读](../category/category_infra.md)\n\n---\n\n**来源**：[腾讯新闻 2026-04-16](https://news.qq.com/rain/a/20260416A05FAQ00)\n**事件日期**：04-18（正式生效）\n**可靠性**：✅ 已生效，官方公告\n\n---\n\n### 事实摘要\n\n- 阿里云 AI 算力及存储产品于 **2026-04-18** 起正式上调价格，最高涨幅 **34%**\n- 涉及产品：GPU 算力实例 + 存储产品\n- 官方给出的原因：全球 AI 需求爆发与供应链涨价\n- 与百度智能云同期涨价，两大云厂商行动一致\n\n### 关键细节\n\n- **最高涨幅**：34%\n- **生效时间**：2026-04-18\n- **涉及产品**：AI 算力（GPU 实例）+ 存储\n- **官方原因**：全球 AI 需求爆发 + 供应链涨价\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：两大云厂商（阿里云 + 百度）同步涨价，说明 AI 算力供需已从\"价格战\"转向\"供不应求\"，市场格局发生根本性变化\n- **解读**：对使用阿里云 MaaS 服务的开发者和企业，成本将显著上升，需重新评估 ROI 或考虑多云策略\n- **解读**：涨价背后是全球 AI 训练和推理需求的爆发——DeepSeek V4 训练、各大厂商模型迭代、企业 AI 应用落地，共同推高算力需求\n- **解读**：结合 DeepSeek 转向华为昇腾的消息，国产算力替代的商业逻辑更加清晰——昇腾芯片价格相对稳定，成为降低算力成本的重要选项\n"
+    },
+    {
+      "id": "item_baidu_price",
+      "slug": "item_baidu_price",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "百度智能云 AI 算力产品涨价（最高 30%）| 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：腾讯新闻 2026-04-16 事件日期：04-18（正式生效）",
+      "source_url": "",
+      "source_name": "item_baidu_price",
+      "tags": [
+        "百度",
+        "算力",
+        "涨价",
+        "GPU"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 百度智能云 AI 算力产品涨价（最高 30%）| 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回算力与基础设施分类解读](../category/category_infra.md)\n\n---\n\n**来源**：[腾讯新闻 2026-04-16](https://news.qq.com/rain/a/20260416A05FAQ00)\n**事件日期**：04-18（正式生效）\n**可靠性**：✅ 已生效，官方公告\n\n---\n\n### 事实摘要\n\n- 百度智能云 AI 算力相关产品自 **2026-04-18** 起上调约 **5%-30%**\n- 并行文件存储等产品上调约 **30%**\n- 与阿里云同步涨价，两大云厂商行动一致\n\n### 关键细节\n\n- **涨幅范围**：5%-30%\n- **并行文件存储涨幅**：约 30%\n- **生效时间**：2026-04-18\n- **涉及产品**：AI 算力（GPU 实例）+ 并行文件存储\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：百度与阿里云同步涨价，说明这不是个别厂商的定价策略，而是整个国内 AI 算力市场的供需变化\n- **解读**：并行文件存储涨幅 30% 值得关注——大规模 AI 训练对高性能存储的需求极大，存储成本上升将直接影响模型训练的总体成本\n- **解读**：对使用百度千帆平台的企业，需重新评估 AI 应用的运营成本，考虑是否迁移或优化推理效率\n"
+    },
+    {
+      "id": "item_bytedance",
+      "slug": "item_bytedance",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "字节跳动 AI 矩阵：豆包月活 2.26 亿 + 扣子 2.0 发布 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：163.com ｜ 搜狐 事件日期：豆包数据为本周披露；扣子 2.0 于 04-15 发布",
+      "source_url": "",
+      "source_name": "item_bytedance",
+      "tags": [
+        "字节跳动",
+        "豆包",
+        "扣子",
+        "Coze",
+        "月活",
+        "职场AI"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 字节跳动 AI 矩阵：豆包月活 2.26 亿 + 扣子 2.0 | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回字节/豆包 分类解读](../category/category_bytedance.md)\n\n---\n\n**来源**：[163.com](https://www.163.com/dy/article/KQMFSG3H05561256.html) ｜ [搜狐](http://mt.sohu.com/a/977732299_122014422)\n**事件日期**：豆包数据为本周披露；扣子 2.0 于 04-15 发布\n**可靠性**：✅ 官方数据 / 官方发布\n\n---\n\n### 事实摘要\n\n- 豆包月活用户突破 **2.26 亿**，日均资源调用 **120 万亿次**\n- 字节 AI 产品矩阵扩展至 **8 条产品线**（豆包/即梦/扣子 Coze/TRAE 等）\n- 扣子 2.0 于 **04-15** 正式发布，定位从\"AI 搭建平台\"升级为**\"职场 AI\"**\n\n### 关键细节\n\n**豆包数据：**\n- **月活 2.26 亿**：国内 AI 助手类产品月活最高（超越 Kimi/文心一言等）\n- **日均调用 120 万亿次**：反映豆包在 B 端（火山引擎方舟平台）的大规模部署\n- **8 条产品线**：豆包（通用助手）/ 即梦（图像/视频生成）/ 扣子 Coze（Agent 平台）/ TRAE（AI 编程）/ 等\n\n**扣子 2.0 核心功能：**\n\n| 功能 | 说明 |\n|------|------|\n| 技能商店（Skills Store） | 类似 App Store，用户可安装/分享 AI 技能模块 |\n| 长期计划（Long-term Planning） | Agent 可制定并执行跨天/跨周的长期任务计划 |\n| 职场 AI 定位 | 从\"搭建 AI Bot\"升级为\"职场工作流自动化\" |\n| 海外版同步 | Coze 国际版同步迭代，面向海外开发者 |\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：豆包 2.26 亿月活是国内 AI 助手赛道的重要里程碑，但需注意：月活包含豆包 App + 豆包小程序 + 豆包网页版，与 ChatGPT 的月活统计口径可能不同，不宜直接对比\n- **解读**：扣子 2.0 的\"职场 AI\"定位是对 Notion AI、Microsoft Copilot 的直接竞争，技能商店的生态策略与 OpenAI GPT Store 类似，但更聚焦企业工作流场景\n- **解读**：Long-term Planning 功能与 OpenAI Agents SDK 的 Long Horizon Task、Claude Opus 4.7 的长程任务定位高度一致，说明\"持续执行的 Agent\"是本周全球 AI 产品的共同演进方向\n- **解读**：字节的 AI 矩阵（豆包/即梦/扣子/TRAE）覆盖了消费端（豆包）、创意端（即梦）、开发者端（TRAE）、企业端（扣子），是国内布局最完整的 AI 产品矩阵之一\n"
+    },
+    {
+      "id": "item_deepseek_ascend",
+      "slug": "item_deepseek_ascend",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "DeepSeek V4 转向华为昇腾（去CUDA化）| 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：51CTO 2026-04-16 事件日期：04-16",
+      "source_url": "",
+      "source_name": "item_deepseek_ascend",
+      "tags": [
+        "DeepSeek",
+        "华为",
+        "昇腾",
+        "去CUDA化",
+        "国产算力"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 DeepSeek V4 转向华为昇腾（去CUDA化）| 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回 DeepSeek 分类解读](../category/category_deepseek.md)\n\n---\n\n**来源**：[51CTO 2026-04-16](https://www.51cto.com/article/840660.html)\n**事件日期**：04-16\n**可靠性**：多家媒体交叉报道，可信度较高\n\n---\n\n### 事实摘要\n\n- DeepSeek V4 的训练基础设施已从英伟达 CUDA 生态转向**华为昇腾芯片**\n- 这是 DeepSeek 去 CUDA 化战略的关键一步，也是国产算力替代的重要里程碑\n- 转向昇腾意味着 DeepSeek 需要适配华为的 CANN（异构计算架构）软件栈\n\n### 关键细节\n\n- **昇腾芯片**：华为昇腾 910B/910C 系列，目前国内最主流的训练芯片替代方案\n- **CANN 软件栈**：华为的异构计算架构，对标英伟达 CUDA，是适配昇腾的核心软件层\n- **战略背景**：美国出口管制限制英伟达高端 GPU 对华出口，去 CUDA 化是应对措施\n- **V3 基础**：DeepSeek 在 V3 训练中已部分使用华为昇腾，V4 进一步深化\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：DeepSeek 成功在昇腾上训练顶级模型，将极大提振国产算力生态的信心。此前业界对昇腾能否支撑顶级模型训练存疑，V4 的成功将是最有力的证明\n- **解读**：对国内 AI 工程师而言，如果 V4 开源，基于昇腾的推理部署方案将随之成熟，降低国产算力落地门槛\n- **解读**：这与本周阿里云/百度算力涨价形成呼应——英伟达 GPU 供应受限 + 价格上涨，国产芯片替代的商业逻辑更加清晰\n- **解读**：海外对标：类似 Meta 在 Llama 训练中使用自研 MTIA 芯片，DeepSeek 转向昇腾是\"去英伟达依赖\"的中国版本\n\n### 原文关键引述\n\n> \"去英伟达CUDA化关键一步！梁文锋内部透露DeepSeek V4发布时间，DeepSeek V4训练转向华为昇腾芯片，国产算力新选择。\"\n> — 51CTO，2026-04-16\n"
+    },
+    {
+      "id": "item_deepseek_v4",
+      "slug": "item_deepseek_v4",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "DeepSeek V4 发布传言（梁文锋内部透露）| 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：IT之家 2026-04-10 ｜ 新浪财经 事件日期：04-10 首次披露，本周（04-13~04-19）持续发酵",
+      "source_url": "",
+      "source_name": "item_deepseek_v4",
+      "tags": [
+        "DeepSeek",
+        "模型预告",
+        "未证实",
+        "梁文锋"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 DeepSeek V4 发布传言（梁文锋内部透露）| 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回 DeepSeek 分类解读](../category/category_deepseek.md)\n\n---\n\n**来源**：[IT之家 2026-04-10](https://www.ithome.com/0/937/682.htm) ｜ [新浪财经](https://finance.sina.cn/tech/2026-04-10/detail-inhtywcx8067278.d.html)\n**事件日期**：04-10 首次披露，本周（04-13~04-19）持续发酵\n**可靠性**：[未证实]，多位知情人士转述，DeepSeek 官方未回应\n\n---\n\n### 事实摘要\n\n- 据《创智记》从多位知情人士处获悉，DeepSeek 创始人梁文锋在内部沟通中透露，DeepSeek 新一代旗舰大模型 **DeepSeek V4 将于 4 月下旬正式发布**\n- 近期 DeepSeek 网页端悄然上线\"快速\"交互模式，被外界解读为 V4 发布前的预热信号\n- DeepSeek 官方对此保持沉默，未作任何公开回应\n\n### 关键细节\n\n- **信源**：多位知情人士，非 DeepSeek 官方\n- **发布时间**：4 月下旬（具体日期未披露）\n- **预热信号**：DeepSeek 网页端新增\"快速\"交互模式\n- **据报道的 V4 特性**：万亿参数规模 + 长期记忆能力（来源：凤凰网，未经官方确认）\n- **结合昇腾转向**：V4 可能是首个完全基于国产算力（华为昇腾）训练的顶级开源模型\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：梁文锋的\"内部透露\"比此前普林斯顿研究员的暗示更具权威性，但仍属未证实信息，需等待官方公告\n- **解读**：若 V4 如期发布且开源，将是继 V3 之后又一次对全球 AI 生态的冲击，尤其是在国产算力背景下完成训练，具有极强的示范意义\n- **解读**：V4 的发布时间（4 月下旬）与本期速报时间窗口（04-13~04-19）紧密衔接，**下期速报将重点跟踪**\n\n### 原文关键引述\n\n> \"据《创智记》从多位知情人士处获悉，DeepSeek创始人梁文锋近日在内部沟通中透露，DeepSeek新一代旗舰大模型DeepSeek V4将于4月下旬正式发布。\"\n> — 新浪财经，2026-04-10\n"
+    },
+    {
+      "id": "item_glm5v",
+      "slug": "item_glm5v",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "智谱 GLM-5V-Turbo（OpenClaw/龙虾）发布 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：新浪财经 ｜ 智谱开放文档 事件日期：04-16",
+      "source_url": "",
+      "source_name": "item_glm5v",
+      "tags": [
+        "智谱",
+        "GLM",
+        "多模态",
+        "视觉理解",
+        "OpenClaw"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 智谱 GLM-5V-Turbo（OpenClaw/龙虾）发布 | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回智谱/GLM 分类解读](../category/category_zhipu.md)\n\n---\n\n**来源**：[新浪财经](https://k.sina.com.cn/article_5952915705_162d248f906702pr5s.html) ｜ [智谱开放文档](https://docs.bigmodel.cn/cn/guide/models/text/glm-5-turbo)\n**事件日期**：04-16\n**可靠性**：✅ 官方发布\n\n---\n\n### 事实摘要\n\n- 智谱于 **04-16** 发布 GLM-5V-Turbo（内部代号\"OpenClaw/龙虾\"）\n- 全球首个面向 **OpenClaw 工作流**深度优化的原生多模态 Coding 基座模型\n- 融合视觉+编程能力，支持文本/图片/视频多模态输入\n- ZClawBench 评分仅次于 Claude Opus 4.6，定价较 GLM-5V-Pro 低约 40%\n\n### 关键细节\n\n**GLM-5V 系列产品矩阵：**\n\n| 版本 | 定位 | 适用场景 | 定价 |\n|------|------|---------|------|\n| GLM-5V-Pro | 旗舰，最强性能 | 复杂多模态推理 | 最高 |\n| **GLM-5V-Turbo** | 轻量高速，高性价比 | 高频图片/视频处理 + Coding | Pro 的 60% |\n| GLM-5V-Flash | 极速，最低成本 | 简单视觉任务 | 最低 |\n\n**GLM-5V-Turbo 核心能力：**\n- **OpenClaw 深度优化**：专为 OpenClaw（龙虾）工作流设计，支持长程规划和操作执行\n- **多模态输入**：文本 / 图片 / 视频，擅长 OCR、图表理解、财报/PPT 解析\n- **视觉+编程融合**：可理解截图中的代码，生成对应的修复方案\n- **ZClawBench**：智谱自研的 OpenClaw 工作流评测基准，GLM-5V-Turbo 仅次于 Claude Opus 4.6\n\n**\"OpenClaw/龙虾\"命名背景：**\n- OpenClaw 是原 Moltbot/Clawdbot，自托管开源 AI 编码 Agent\n- 已被 Qwen3.6-35B-A3B、GLM-5V-Turbo 等国产模型深度适配\n- \"龙虾\"是 OpenClaw 的中文社区昵称（Claw = 爪/钳）\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：GLM-5V-Turbo 是多模态 API 市场\"轻量化\"趋势的缩影——各家都在推 Turbo/Flash/Mini 版本，以低价切入高频视觉任务市场。这类任务对延迟和成本敏感，但对最高精度需求没有旗舰版那么高\n- **解读**：智谱选择以\"OpenClaw 深度优化\"作为差异化卖点，是一个精准的生态绑定策略。OpenClaw 在国内开发者社区有一定用户基础，GLM-5V-Turbo 通过深度适配获得这部分用户的优先选择权\n- **解读**：视觉+编程融合能力（看截图写代码）是 2026 年多模态模型的重要演进方向，与 Claude Opus 4.7 的视觉能力提升、Qwen3.6 的多模态基准超越 Claude Sonnet 4.5 形成呼应\n- **推荐场景**：每天处理大量图片/文档的企业应用（电商/金融/法律）、需要中文 OCR 精度的场景、已在使用智谱 API 的团队\n- **不推荐场景**：需要最高精度的复杂推理（选 GLM-5V-Pro 或 Claude Sonnet）、需要开源/本地部署（智谱无开源版本）\n"
+    },
+    {
+      "id": "item_hunyuan3d2",
+      "slug": "item_hunyuan3d2",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "腾讯混元3D世界模型2.0 开源（HY-World 2.0）| 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：新浪财经 2026-04-16 ｜ 金融界 事件日期：04-16",
+      "source_url": "",
+      "source_name": "item_hunyuan3d2",
+      "tags": [
+        "腾讯",
+        "混元",
+        "HY-World",
+        "3D生成",
+        "开源",
+        "3DGS",
+        "具身智能"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 腾讯混元3D世界模型2.0 开源（HY-World 2.0）| 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回腾讯分类解读](../category/category_tencent.md)\n\n---\n\n**来源**：[新浪财经 2026-04-16](https://finance.sina.com.cn/stock/t/2026-04-16/doc-inhusenh2910703.shtml) ｜ [金融界](https://m.jrj.com.cn/madapter/24h/2026/04/16103956769827.shtml)\n**事件日期**：04-16\n**可靠性**：✅ 官方发布，已开源\n\n---\n\n### 事实摘要\n\n- 腾讯混元于 04-16 正式发布并开源 **混元3D世界模型2.0（HY-World 2.0）**\n- HY-World 2.0 是一个多模态世界模型，支持文字、图片、视频等不同类型输入\n- 能够自动生成、重建和模拟完整的 3D 世界，支持 Mesh、3DGS、点云等多种格式导出\n- 可无缝对接游戏开发流程和具身仿真引擎\n\n### 关键细节\n\n- **多模态输入**：文字 / 图片 / 视频均可作为输入，生成对应的 3D 场景\n- **输出格式**：Mesh、3DGS（3D Gaussian Splatting）、点云，覆盖主流 3D 表示方法\n- **应用场景**：游戏开发（直接导入游戏引擎）、具身智能仿真（机器人训练环境生成）\n- **开源**：已在 GitHub 开源，可直接下载权重使用\n- **核心能力**：\"一句话造出 3D 世界\"，并直接导入到游戏制作或具身仿真引擎\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：HY-World 2.0 的开源填补了国内在 3D 世界生成领域的空白，对游戏开发者和具身智能研究者是重要工具\n- **解读**：支持 3DGS（3D Gaussian Splatting）格式输出是关键亮点——3DGS 是目前最热门的 3D 表示方法，渲染速度快、质量高，直接对接 Unreal/Unity 等主流引擎\n- **解读**：具身智能仿真场景是 HY-World 2.0 的重要应用方向——机器人训练需要大量高质量的 3D 仿真环境，HY-World 2.0 可大幅降低环境生成成本\n- **解读**：海外对标：与 Google 的 World Model 研究方向类似，但腾讯选择开源，策略更激进，有助于快速建立生态\n\n### 原文关键引述\n\n> \"腾讯混元发布并开源混元3D世界模型2.0（HY-World2.0）。这是一个多模态世界模型，可根据文字、图片、视频等不同类型输入，自动生成、重建和模拟3D世界。\"\n> — 新浪财经，2026-04-16\n"
+    },
+    {
+      "id": "item_kimi_k26",
+      "slug": "item_kimi_k26",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "Kimi K2.6-code-preview：SWE-bench Verified 77.2% 登顶 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：ZOL 事件日期：04-14",
+      "source_url": "",
+      "source_name": "item_kimi_k26",
+      "tags": [
+        "月之暗面",
+        "Kimi",
+        "编码能力",
+        "SWE-bench",
+        "国产编程模型"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 Kimi K2.6-code-preview：SWE-bench Verified 77.2% | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回月之暗面/Kimi 分类解读](../category/category_kimi.md)\n\n---\n\n**来源**：[ZOL](https://ai.zol.com.cn/1165/11653449.html)\n**事件日期**：04-14\n**可靠性**：✅ 官方发布\n\n---\n\n### 事实摘要\n\n- 月之暗面于 **04-14** 发布 Kimi K2.6-code-preview，万亿参数编程专项模型\n- **SWE-bench Verified 77.2%**，超越 Claude Sonnet 4.5（75.0%）和 Qwen3.6-35B-A3B（73.4%）\n- 256K 上下文，Kimi Code 控制台标注为旗舰模型（Flagship model）\n- 目前仅 Kimi 会员开放（39 元/月），通过 Kimi API 开放调用\n\n### 关键细节\n\n**SWE-bench Verified 77.2% 的历史背景：**\n\n| 时间 | 最高分 | 模型 |\n|------|--------|------|\n| 2025 年初 | ~30% | 最佳模型 |\n| 2025 年中 | ~50% | GPT-4o / Claude 3.5 |\n| 2025 年底 | ~65% | Claude 3.7 Sonnet |\n| 2026-04-14 | **77.2%** | Kimi K2.6-code-preview |\n\n**与其他模型的公平对比：**\n\n> ⚠️ 重要：以下对比需注意测试集差异\n\n| 模型 | 基准 | 分数 | 可比性 |\n|------|------|------|--------|\n| Kimi K2.6-code-preview | SWE-bench **Verified** | **77.2%** | 基准A |\n| Claude Sonnet 4.5 | SWE-bench **Verified** | 75.0% | 基准A（可比）|\n| Qwen3.6-35B-A3B | SWE-bench **Verified** | 73.4% | 基准A（可比）|\n| Claude Opus 4.7 | SWE-bench **Pro** | 64.3% | 基准B（不可直比）|\n\n- **SWE-bench Verified**：~500 个真实 GitHub Issue 修复任务（人工验证）\n- **SWE-bench Pro**：更难的扩展版本，包含更复杂的多文件修改任务\n- 两者不直接可比，Kimi 77.2% vs Opus 4.7 64.3% 是不同测试集\n\n**77.2% 的实际含义：**\n\nSWE-bench Verified 包含约 500 个真实 GitHub Issue（Django/Flask/Sympy/Scikit-learn 等知名项目）。77.2% 意味着在 500 个真实 Bug 修复任务中，Kimi K2.6 能独立解决约 **386 个**，无需人工介入。\n\n**API 信息：**\n- 可用性：Kimi API（platform.moonshot.cn）\n- 状态：preview（预览版），功能持续迭代\n- 定价：与 K2.5 相同\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：\"code-preview\"命名说明月之暗面采用\"分能力维度发布\"策略——编程能力已达发布标准，但整体模型仍在优化。正式版（K2.6）可能在非编程能力上还有提升空间\n- **解读**：77.2% 不等于\"替代程序员\"。SWE-bench 测试的是特定类型任务（真实 GitHub Issue 修复），软件工程还涉及需求理解、架构设计、代码审查、团队协作等 SWE-bench 测试范围之外的能力\n- **解读**：Kimi K2.6 vs Qwen Code（基于 Qwen3.6）vs Claude Code（基于 Opus 4.7）的三方竞争正在形成。国内开发者面临真实选择：高性能国产模型（数据留境）vs 顶级海外 API（更成熟工具链）\n- **解读**：对于处理国内代码库（中文注释/国内框架/内网 Git）的场景，Kimi K2.6 有语言和部署优势，值得用同一批代码任务与 Claude Code 做横向对比测试\n\n### 原文关键引述\n\n> \"Kimi K2.6-code-preview 在 SWE-bench Verified 上达到 77.2%，超越了上一代 K2.5 的 74.5%，展示了显著的编程能力提升。\"\n"
+    },
+    {
+      "id": "item_maxhermes",
+      "slug": "item_maxhermes",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "MiniMax MaxHermes 云端沙箱 AI 技能自主进化上线 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：电子工程世界 2026-04-16 ｜ AIBase 事件日期：04-16",
+      "source_url": "",
+      "source_name": "item_maxhermes",
+      "tags": [
+        "MiniMax",
+        "MaxHermes",
+        "云端沙箱",
+        "AI技能进化",
+        "Agent"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 MiniMax MaxHermes 云端沙箱 AI 技能自主进化上线 | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回 MiniMax 分类解读](../category/category_minimax.md)\n\n---\n\n**来源**：[电子工程世界 2026-04-16](https://www.eet-china.com/mp/a488272.html) ｜ [AIBase](https://www.aibase.com/zh/news/27167)\n**事件日期**：04-16\n**可靠性**：✅ 官方发布\n\n---\n\n### 事实摘要\n\n- MiniMax 于 04-16 上线 **MaxHermes**，定位为\"全球首个云端沙箱 AI 技能自主进化系统\"\n- 核心能力：AI 技能在云端沙箱中自主学习与进化，无需人工干预\n- 直接挑战 OpenClaw（龙虾），后者以连接飞书、钉钉等办公软件著称\n\n### 关键细节\n\n- **云端沙箱**：技能进化在隔离的云端沙箱中运行，安全可控\n- **自主进化**：AI 可根据使用反馈自动优化技能，降低人工调优成本\n- **竞争定位**：官方明确对标 OpenClaw，显示 MiniMax 在 Agent 工具市场的野心\n- **技能范围**：支持连接办公软件（飞书、钉钉等）等多种工具集成\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：MaxHermes 的\"自主进化\"能力是 Agentic Engineering 的重要方向——让 Agent 自我改进而非依赖人工 Prompt 工程，降低维护成本\n- **解读**：云端沙箱 + 自主进化的组合，与 OpenAI Agents SDK 本周发布的沙盒架构（Harness + 沙盒 + Manifest）在方向上高度一致，说明这是行业共识\n- **解读**：对国内开发者而言，MaxHermes 提供了一个无需自建沙盒基础设施即可实现 Agent 技能进化的平台，值得关注\n- **解读**：海外对标：与 OpenClaw 的直接竞争说明国内 Agent 工具市场正在进入白热化阶段，MiniMax 选择在这个时间点发力具有战略意义\n"
+    },
+    {
+      "id": "item_qwen36",
+      "slug": "item_qwen36",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "Qwen3.6-35B-A3B 开源发布 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：IT之家 2026-04-16 ｜ UniFuncs 事件日期：04-15/16",
+      "source_url": "",
+      "source_name": "item_qwen36",
+      "tags": [
+        "阿里云",
+        "通义千问",
+        "Qwen3.6",
+        "MoE",
+        "开源",
+        "Agentic Coding"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 Qwen3.6-35B-A3B 开源发布 | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回阿里云/通义分类解读](../category/category_aliyun.md)\n\n---\n\n**来源**：[IT之家 2026-04-16](https://www.ithome.com/0/940/079.htm) ｜ [UniFuncs](https://unifuncs.com/s/QuWUHVx0)\n**事件日期**：04-15/16\n**可靠性**：✅ 官方发布，已在 Qwen Studio 上线并开源权重\n\n---\n\n### 事实摘要\n\n- 阿里千问团队于 04-15/16 正式开源 Qwen3.6 系列首个权重模型 **Qwen3.6-35B-A3B**\n- 采用混合专家（MoE）架构，总参数量 350 亿，但每次推理仅激活约 30 亿参数\n- 在智能体编程（Agentic Coding）和仓库级代码推理方面超越前代模型 Qwen3.5-35B-A3B\n- 已在 Qwen Studio 上线，并以开源权重形式向社区发布\n\n### 关键细节\n\n- **架构**：MoE（混合专家），35B 总参 / 3B 激活，推理成本大幅降低\n- **编程能力**：官方声称\"中国编程能力最强的模型\"，Agentic Coding 基准超越前代\n- **上下文**：支持 1M 超长上下文\n- **多语言**：支持 100+ 语言\n- **量化**：支持 FP8 量化，进一步降低部署成本\n- **Agent 能力**：原生支持多模态思考与非思考模式，可独立拆解复杂任务\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：35B 总参 / 3B 激活的 MoE 架构是关键——推理时只激活 3B 参数，意味着单张消费级 GPU（如 RTX 4090）即可流畅运行，大幅降低本地部署门槛\n- **解读**：官方声称编程能力\"直逼 Claude\"，但需独立评测验证。从架构设计看，专注 Agentic Coding 的方向与 Claude Code 的定位形成直接竞争\n- **解读**：阿里持续开源策略（Qwen3.5 → Qwen3.6，不到两个月迭代）显示其在开源生态的投入力度不减，对 Meta Llama 系列形成有力竞争\n- **解读**：海外对标：与 Mistral 的 MoE 系列（Mixtral）定位类似，但 Qwen3.6 在 Agentic Coding 方向更为专注\n\n### 原文关键引述\n\n> \"阿里千问3.6系列中等尺寸模型Qwen3.6-35B-A3B模型正式开源。其仅激活3B，轻量高效，在智能体编程方面表现卓越，超越前代模型Qwen3.5-35B-A3B。\"\n> — 新浪财经，2026-04-17\n"
+    },
+    {
+      "id": "item_stanford_report",
+      "slug": "item_stanford_report",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "斯坦福《2026年AI指数报告》阿里全球第3 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：央视网 2026-04-15 事件日期：04-15",
+      "source_url": "",
+      "source_name": "item_stanford_report",
+      "tags": [
+        "斯坦福",
+        "AI指数报告",
+        "阿里",
+        "行业报告",
+        "中国AI"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 斯坦福《2026年AI指数报告》阿里全球第3 | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回行业动态分类解读](../category/category_industry.md)\n\n---\n\n**来源**：[央视网 2026-04-15](https://blog.csdn.net/txg666/article/details/160258870)\n**事件日期**：04-15\n**可靠性**：✅ 斯坦福官方报告\n\n---\n\n### 事实摘要\n\n- 斯坦福大学于 04-15 发布《2026年人工智能指数报告》\n- **阿里巴巴位列2025年全球顶级模型贡献榜第3名**，是入选重要模型最多的中国科技公司\n- 报告显示中国在多项AI指标上已占据优势\n\n### 关键细节\n\n- **阿里排名**：全球顶级模型贡献榜第3名（仅次于 OpenAI、Google）\n- **中国AI指标**：在多项维度已超越或追平美国\n- **报告覆盖**：模型发布数量、研究论文、AI应用落地等多个维度\n- **报告机构**：斯坦福大学 HAI（以人为本人工智能研究所），全球最权威的 AI 发展评估机构之一\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：斯坦福报告是全球最权威的AI发展评估之一，阿里排名第3具有重要的国际认可价值，比国内自我评价更具说服力\n- **解读**：中国AI在\"多项指标占据优势\"的表述来自第三方机构，这是中国AI从\"追赶\"转向\"并跑\"的重要外部验证\n- **解读**：结合本周 Qwen3.6 开源、DeepSeek V4 即将发布，中国开源模型生态的全球竞争力正在快速提升\n- **解读**：对国内 AI 工程师而言，这意味着基于国产开源模型（Qwen/DeepSeek）构建应用的技术风险正在降低，生态成熟度已达到可生产部署的水平\n"
+    },
+    {
+      "id": "item_zhiyuan_robot",
+      "slug": "item_zhiyuan_robot",
+      "edition_date": "2026-04-19",
+      "region": "domestic",
+      "tier": "item",
+      "title": "智元机器人2026合作伙伴大会 | 2026-04-13 ~ 2026-04-19",
+      "summary": "--- 来源：IT之家 2026-04-17 ｜ 新浪财经 04-12 事件日期：04-17",
+      "source_url": "",
+      "source_name": "item_zhiyuan_robot",
+      "tags": [
+        "智元机器人",
+        "具身智能",
+        "合作伙伴大会",
+        "机器人本体",
+        "AI大模型"
+      ],
+      "reactions": {
+        "like": 0,
+        "fire": 0,
+        "insightful": 0
+      },
+      "user_reaction": null,
+      "published_at": "2026-04-19T00:00:00.000Z",
+      "created_at": "2026-04-19T00:00:00.000Z",
+      "content": "\n# 📄 智元机器人2026合作伙伴大会 | 单条深度解读\n\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回行业动态分类解读](../category/category_industry.md)\n\n---\n\n**来源**：[IT之家 2026-04-17](https://www.ithome.com/0/938/317.htm) ｜ [新浪财经 04-12](https://finance.sina.com.cn/stock/t/2026-04-12/doc-inhufuya0450103.shtml)\n**事件日期**：04-17\n**可靠性**：✅ 已举办\n\n---\n\n### 事实摘要\n\n- 智元机器人于 04-17 在上海举办 **2026合作伙伴大会**，2500位来自34个国家和地区的合作伙伴参会\n- 大会发布：**4个机器人本体新品、4个AI大模型、7个解决方案**及开放数据集\n- 智元创始人邓泰华、\"稚晖君\"彭志辉发表主题演讲\n\n### 关键细节\n\n- **参会规模**：2500人，34个国家，远超去年首届\n- **发布内容**：4本体 + 4模型 + 7方案 + 开放数据集\n- **智元酷拓**（四足机器人业务）：一季度已销售至\"仓库无货\"，2026年营收目标5亿元，2030年目标100亿元\n- **\"稚晖君\"**：彭志辉，前华为天才少年，智元联合创始人，在机器人圈具有极高知名度\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：34个国家的合作伙伴规模显示国内具身智能生态已具备全球影响力，不再局限于国内市场\n- **解读**：\"仓库无货\"的销售状态说明具身智能已从实验室走向商业化，市场需求真实存在，不是 PPT 阶段\n- **解读**：4个AI大模型的发布（具体型号待官方公布）将进一步完善具身智能的软件生态，降低机器人开发门槛\n- **解读**：智元酷拓2030年100亿元的目标显示具身智能赛道的商业化预期已非常乐观，与本周腾讯 HY-World 2.0 开源（为具身仿真提供 3D 环境）形成生态协同\n"
+    }
+  ]
+}

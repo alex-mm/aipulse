@@ -1,0 +1,19 @@
+name = "aipulse"
+compatibility_date = "2024-01-01"
+
+kv_namespaces = [
+  { binding = "CACHE", id = "75e22e1a24fd42eea72138345771db28", preview_id = "75e22e1a24fd42eea72138345771db28" }
+]
+
+[vars]
+# These are set via Cloudflare dashboard for security:
+# SUPABASE_URL = "https://xxx.supabase.co"
+# SUPABASE_SERVICE_KEY = "eyJ..."
+# ADMIN_TOKEN = "your-secret-token"
+
+# Uncomment for local dev with wrangler pages dev
+# [env.dev]
+# [env.dev.vars]
+# SUPABASE_URL = "http://localhost:54321"
+# SUPABASE_SERVICE_KEY = "local-dev-key"
+# ADMIN_TOKEN = "dev-token"

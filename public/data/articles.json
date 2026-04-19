@@ -1,0 +1,1012 @@
+[
+  {
+    "id": "domestic_briefing_20260419",
+    "slug": "domestic_briefing_20260419",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "brief",
+    "title": "国内 AI 动态周报 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- --- - [模型预告][未证实] 04-16，DeepSeek V4 训练转向华为昇腾芯片，去 CUDA 化进程加速，同期梁文锋内部透露 V4 将于 4 月下旬正式发布 — 51CTO 04-16 ｜ IT之家 04-10 ｜ → 单条解读：V4传言 ｜ → 单条解读：昇腾转向",
+    "source_url": "",
+    "source_name": "domestic_briefing_20260419",
+    "tags": [
+      "DeepSeek",
+      "阿里云",
+      "通义千问",
+      "腾讯",
+      "MiniMax",
+      "智元机器人",
+      "百度",
+      "算力"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_aliyun",
+    "slug": "category_aliyun",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "category",
+    "title": "阿里云/通义 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周阿里云有两条重要动态：Qwen3.6-35B-A3B 开源（技术层面的重大进展）和 AI 算力产品涨价（商业层面的重要信号）。两者共同反映了阿里云在 AI 时代的双重布局：持续开源强化生态影响力，同时随市场涨价提升商业回报。 ---",
+    "source_url": "",
+    "source_name": "category_aliyun",
+    "tags": [
+      "阿里云",
+      "通义千问",
+      "Qwen3.6",
+      "MoE",
+      "开源",
+      "算力",
+      "涨价"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_deepseek",
+    "slug": "category_deepseek",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "category",
+    "title": "DeepSeek 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周 DeepSeek 有两条重要信号，均与 V4 相关：一是 V4 转向华为昇腾芯片训练（去 CUDA 化的关键一步），二是 梁文锋内部透露 V4 将于 4 月下旬发布。两条信息相互印证，V4 发布进入倒计时。 ---",
+    "source_url": "",
+    "source_name": "category_deepseek",
+    "tags": [
+      "DeepSeek",
+      "模型预告",
+      "昇腾",
+      "去CUDA化",
+      "未证实"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_industry",
+    "slug": "category_industry",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "category",
+    "title": "行业动态 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周行业层面有两条重要动态：智元机器人2026合作伙伴大会（具身智能生态加速成熟）和斯坦福《2026年AI指数报告》（阿里全球排名第3，中国AI多项指标领先）。 ---",
+    "source_url": "",
+    "source_name": "category_industry",
+    "tags": [
+      "智元机器人",
+      "具身智能",
+      "斯坦福",
+      "AI指数报告",
+      "阿里",
+      "行业报告"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_infra",
+    "slug": "category_infra",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "category",
+    "title": "算力与基础设施 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周最重要的算力信号：阿里云与百度智能云同步于 04-18 上调 AI 算力产品价格。两大云厂商同步涨价，标志着国内 AI 算力市场从\"价格战\"时代正式进入\"供不应求\"时代。 ---",
+    "source_url": "",
+    "source_name": "category_infra",
+    "tags": [
+      "阿里云",
+      "百度",
+      "算力",
+      "涨价",
+      "MaaS",
+      "GPU"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_minimax",
+    "slug": "category_minimax",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "category",
+    "title": "MiniMax 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周 MiniMax 的核心动态是 MaxHermes 云端沙箱 AI 技能自主进化系统上线。这是国内首个将 AI 技能进化能力放在云端沙箱中运行的产品，直接对标海外的 OpenClaw（龙虾）。 ---",
+    "source_url": "",
+    "source_name": "category_minimax",
+    "tags": [
+      "MiniMax",
+      "MaxHermes",
+      "云端沙箱",
+      "AI技能进化",
+      "Agent"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_tencent",
+    "slug": "category_tencent",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "category",
+    "title": "腾讯 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周腾讯的核心动态是 混元3D世界模型2.0（HY-World 2.0）正式发布并开源。这是腾讯在 3D 生成领域的重要里程碑，也是国内首个面向游戏开发和具身仿真的多模态 3D 世界模型开源发布。 ---",
+    "source_url": "",
+    "source_name": "category_tencent",
+    "tags": [
+      "腾讯",
+      "混元",
+      "HY-World",
+      "3D生成",
+      "开源",
+      "具身智能"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_ai_regulation",
+    "slug": "item_ai_regulation",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "AI 拟人化互动服务管理办法：95 天合规倒计时 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：网信办官网 事件日期：04-10 发布，2026-07-15 起施行",
+    "source_url": "",
+    "source_name": "item_ai_regulation",
+    "tags": [
+      "政策法规",
+      "网信办",
+      "AI合规",
+      "情感陪伴",
+      "未成年人保护"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_aliyun_price",
+    "slug": "item_aliyun_price",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "阿里云 AI 算力产品涨价（最高 34%）| 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：腾讯新闻 2026-04-16 事件日期：04-18（正式生效）",
+    "source_url": "",
+    "source_name": "item_aliyun_price",
+    "tags": [
+      "阿里云",
+      "算力",
+      "涨价",
+      "MaaS",
+      "GPU"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_baidu_price",
+    "slug": "item_baidu_price",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "百度智能云 AI 算力产品涨价（最高 30%）| 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：腾讯新闻 2026-04-16 事件日期：04-18（正式生效）",
+    "source_url": "",
+    "source_name": "item_baidu_price",
+    "tags": [
+      "百度",
+      "算力",
+      "涨价",
+      "GPU"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_bytedance",
+    "slug": "item_bytedance",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "字节跳动 AI 矩阵：豆包月活 2.26 亿 + 扣子 2.0 发布 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：163.com ｜ 搜狐 事件日期：豆包数据为本周披露；扣子 2.0 于 04-15 发布",
+    "source_url": "",
+    "source_name": "item_bytedance",
+    "tags": [
+      "字节跳动",
+      "豆包",
+      "扣子",
+      "Coze",
+      "月活",
+      "职场AI"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_deepseek_ascend",
+    "slug": "item_deepseek_ascend",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "DeepSeek V4 转向华为昇腾（去CUDA化）| 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：51CTO 2026-04-16 事件日期：04-16",
+    "source_url": "",
+    "source_name": "item_deepseek_ascend",
+    "tags": [
+      "DeepSeek",
+      "华为",
+      "昇腾",
+      "去CUDA化",
+      "国产算力"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_deepseek_v4",
+    "slug": "item_deepseek_v4",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "DeepSeek V4 发布传言（梁文锋内部透露）| 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：IT之家 2026-04-10 ｜ 新浪财经 事件日期：04-10 首次披露，本周（04-13~04-19）持续发酵",
+    "source_url": "",
+    "source_name": "item_deepseek_v4",
+    "tags": [
+      "DeepSeek",
+      "模型预告",
+      "未证实",
+      "梁文锋"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_glm5v",
+    "slug": "item_glm5v",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "智谱 GLM-5V-Turbo（OpenClaw/龙虾）发布 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：新浪财经 ｜ 智谱开放文档 事件日期：04-16",
+    "source_url": "",
+    "source_name": "item_glm5v",
+    "tags": [
+      "智谱",
+      "GLM",
+      "多模态",
+      "视觉理解",
+      "OpenClaw"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_hunyuan3d2",
+    "slug": "item_hunyuan3d2",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "腾讯混元3D世界模型2.0 开源（HY-World 2.0）| 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：新浪财经 2026-04-16 ｜ 金融界 事件日期：04-16",
+    "source_url": "",
+    "source_name": "item_hunyuan3d2",
+    "tags": [
+      "腾讯",
+      "混元",
+      "HY-World",
+      "3D生成",
+      "开源",
+      "3DGS",
+      "具身智能"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_kimi_k26",
+    "slug": "item_kimi_k26",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "Kimi K2.6-code-preview：SWE-bench Verified 77.2% 登顶 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：ZOL 事件日期：04-14",
+    "source_url": "",
+    "source_name": "item_kimi_k26",
+    "tags": [
+      "月之暗面",
+      "Kimi",
+      "编码能力",
+      "SWE-bench",
+      "国产编程模型"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_maxhermes",
+    "slug": "item_maxhermes",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "MiniMax MaxHermes 云端沙箱 AI 技能自主进化上线 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：电子工程世界 2026-04-16 ｜ AIBase 事件日期：04-16",
+    "source_url": "",
+    "source_name": "item_maxhermes",
+    "tags": [
+      "MiniMax",
+      "MaxHermes",
+      "云端沙箱",
+      "AI技能进化",
+      "Agent"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_qwen36",
+    "slug": "item_qwen36",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "Qwen3.6-35B-A3B 开源发布 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：IT之家 2026-04-16 ｜ UniFuncs 事件日期：04-15/16",
+    "source_url": "",
+    "source_name": "item_qwen36",
+    "tags": [
+      "阿里云",
+      "通义千问",
+      "Qwen3.6",
+      "MoE",
+      "开源",
+      "Agentic Coding"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_stanford_report",
+    "slug": "item_stanford_report",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "斯坦福《2026年AI指数报告》阿里全球第3 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：央视网 2026-04-15 事件日期：04-15",
+    "source_url": "",
+    "source_name": "item_stanford_report",
+    "tags": [
+      "斯坦福",
+      "AI指数报告",
+      "阿里",
+      "行业报告",
+      "中国AI"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_zhiyuan_robot",
+    "slug": "item_zhiyuan_robot",
+    "edition_date": "2026-04-19",
+    "region": "domestic",
+    "tier": "item",
+    "title": "智元机器人2026合作伙伴大会 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：IT之家 2026-04-17 ｜ 新浪财经 04-12 事件日期：04-17",
+    "source_url": "",
+    "source_name": "item_zhiyuan_robot",
+    "tags": [
+      "智元机器人",
+      "具身智能",
+      "合作伙伴大会",
+      "机器人本体",
+      "AI大模型"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "overseas_briefing_20260419",
+    "slug": "overseas_briefing_20260419",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "brief",
+    "title": "海外 AI 五巨头周报 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- --- - [模型退役] 04-19，Claude Haiku 3（claude-haiku-3-20240307）今日正式退役，API 即日起返回错误，需迁移至 claude-haiku-3-5 — Anthropic 官方 ｜ → 单条解读",
+    "source_url": "",
+    "source_name": "overseas_briefing_20260419",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "OpenAI",
+      "Google",
+      "xAI",
+      "A2UI",
+      "Codex"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_anthropic",
+    "slug": "category_anthropic",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "category",
+    "title": "Anthropic 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周 Anthropic 有三条重要动态，且三条之间存在内在逻辑：Haiku 3 退役（清理旧模型）→ Opus 4.7 GA（推出长程 Agent 旗舰）→ Claude Code 重大更新（强化 Agentic Coding 工具链）。整体方向清晰：Anthropic 正在全力押注 Agent 工作负载。 ---",
+    "source_url": "",
+    "source_name": "category_anthropic",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Haiku",
+      "Opus",
+      "Claude Code",
+      "模型退役"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_google",
+    "slug": "category_google",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "category",
+    "title": "Google 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周 Google 有三条动态，覆盖协议层（A2UI v0.9）、桌面应用层（Gemini Mac）和浏览器层（Chrome AI 模式），构成 Google AI 的全端布局。 ---",
+    "source_url": "",
+    "source_name": "category_google",
+    "tags": [
+      "Google",
+      "A2UI",
+      "Gemini",
+      "Chrome",
+      "生成式UI",
+      "Agent",
+      "浏览器"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_openai",
+    "slug": "category_openai",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "category",
+    "title": "OpenAI 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周 OpenAI 有两条重大更新：Agents SDK 三层架构升级（基础设施层）和 Codex 重大更新（应用层）。两者共同构成 OpenAI 的 Agentic Engineering 全栈布局。 ---",
+    "source_url": "",
+    "source_name": "category_openai",
+    "tags": [
+      "OpenAI",
+      "Agents SDK",
+      "Codex",
+      "harness",
+      "沙盒",
+      "Manifest",
+      "多智能体"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "category_xai",
+    "slug": "category_xai",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "category",
+    "title": "xAI 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 本周 xAI 的核心动态是 Grok STT/TTS 音频 API 正式发布，以 $0.10/小时的定价切入语音 AI 市场，官方声称是市场最低价。 ---",
+    "source_url": "",
+    "source_name": "category_xai",
+    "tags": [
+      "xAI",
+      "Grok",
+      "STT",
+      "TTS",
+      "语音API",
+      "多语言"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_a2ui_v09",
+    "slug": "item_a2ui_v09",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Google A2UI v0.9 发布 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：A2UI 官网 事件日期：04-17",
+    "source_url": "",
+    "source_name": "item_a2ui_v09",
+    "tags": [
+      "Google",
+      "A2UI",
+      "协议",
+      "生成式UI",
+      "Agent",
+      "框架无关"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_agents_sdk",
+    "slug": "item_agents_sdk",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "OpenAI Agents SDK 重大升级（三层架构）| 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：OpenAI GitHub 事件日期：04-15",
+    "source_url": "",
+    "source_name": "item_agents_sdk",
+    "tags": [
+      "OpenAI",
+      "Agents SDK",
+      "harness",
+      "沙盒",
+      "Manifest",
+      "Long Horizon Task"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_chrome_ai",
+    "slug": "item_chrome_ai",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Google Chrome 推出 AI 模式 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：TechCrunch 2026-04-16 事件日期：04-16",
+    "source_url": "",
+    "source_name": "item_chrome_ai",
+    "tags": [
+      "Google",
+      "Chrome",
+      "AI模式",
+      "浏览器",
+      "分屏"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_claude_code",
+    "slug": "item_claude_code",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Claude Code 重大更新 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：Anthropic 官方文档 事件日期：04-14",
+    "source_url": "",
+    "source_name": "item_claude_code",
+    "tags": [
+      "Anthropic",
+      "Claude Code",
+      "编程工具",
+      "Agent",
+      "多智能体"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_claude_design",
+    "slug": "item_claude_design",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Claude Design 发布：Anthropic 首个官方 AI 设计系统 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：Anthropic 官方博客 事件日期：04-17",
+    "source_url": "",
+    "source_name": "item_claude_design",
+    "tags": [
+      "Anthropic",
+      "Claude Design",
+      "设计系统",
+      "React",
+      "UI组件"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_claude_opus47",
+    "slug": "item_claude_opus47",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Claude Opus 4.7 正式 GA | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：Fazm 2026-04-14 事件日期：04-14",
+    "source_url": "",
+    "source_name": "item_claude_opus47",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Opus",
+      "Agent",
+      "Long Horizon Task",
+      "模型发布"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_codex_update",
+    "slug": "item_codex_update",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "OpenAI Codex 重大更新（全系统操作）| 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：AIToolly 2026-04-16 事件日期：04-16",
+    "source_url": "",
+    "source_name": "item_codex_update",
+    "tags": [
+      "OpenAI",
+      "Codex",
+      "多智能体",
+      "全系统操作",
+      "编程工具"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_gemini_mac",
+    "slug": "item_gemini_mac",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Gemini Mac 原生应用发布 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：The Verge 2026-04-15 事件日期：04-15",
+    "source_url": "",
+    "source_name": "item_gemini_mac",
+    "tags": [
+      "Google",
+      "Gemini",
+      "Mac",
+      "原生应用",
+      "屏幕共享"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_grok_audio",
+    "slug": "item_grok_audio",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "xAI Grok STT/TTS 音频 API 正式发布 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：xAI 官方博客 事件日期：04-17",
+    "source_url": "",
+    "source_name": "item_grok_audio",
+    "tags": [
+      "xAI",
+      "Grok",
+      "STT",
+      "TTS",
+      "语音API",
+      "多语言"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_haiku3_eol",
+    "slug": "item_haiku3_eol",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Claude Haiku 3 今日正式退役 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：Anthropic 官方 事件日期：04-19（今日生效）",
+    "source_url": "",
+    "source_name": "item_haiku3_eol",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Haiku",
+      "模型退役",
+      "迁移"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_harness",
+    "slug": "item_harness",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Harness Engineering：2026 年 AI Agent 工程核心范式 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：腾讯新闻/DeepHub 事件日期：04-09（本周发酵，与 OpenAI Agents SDK 三层架构同期）",
+    "source_url": "",
+    "source_name": "item_harness",
+    "tags": [
+      "Harness Engineering",
+      "Agent架构",
+      "工程实践",
+      "LangChain",
+      "Terminal-Bench"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_mcp_roadmap",
+    "slug": "item_mcp_roadmap",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "MCP 2026 路线图：从工具协议到 Agent 互联网 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：MCP 官方博客 事件日期：04-17",
+    "source_url": "",
+    "source_name": "item_mcp_roadmap",
+    "tags": [
+      "MCP",
+      "Anthropic",
+      "协议",
+      "Agent生态",
+      "MCP2.0"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "item_meta_muse",
+    "slug": "item_meta_muse",
+    "edition_date": "2026-04-19",
+    "region": "overseas",
+    "tier": "item",
+    "title": "Meta Muse Spark：告别 Llama 开源路线，进军超级智能 | 2026-04-13 ~ 2026-04-19",
+    "summary": "--- 来源：TechEnt.tv 事件日期：04-17",
+    "source_url": "",
+    "source_name": "item_meta_muse",
+    "tags": [
+      "Meta",
+      "Muse Spark",
+      "超级智能",
+      "战略转向",
+      "闭源"
+    ],
+    "reactions": {
+      "like": 0,
+      "fire": 0,
+      "insightful": 0
+    },
+    "user_reaction": null,
+    "published_at": "2026-04-19T00:00:00.000Z",
+    "created_at": "2026-04-19T00:00:00.000Z"
+  }
+]

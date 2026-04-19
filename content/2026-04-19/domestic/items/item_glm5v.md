@@ -1,0 +1,58 @@
+---
+title: 智谱 GLM-5V-Turbo（OpenClaw/龙虾）发布 | 2026-04-13 ~ 2026-04-19
+date: 2026-04-19
+region: domestic
+tier: item
+tags: [智谱, GLM, 多模态, 视觉理解, OpenClaw]
+sync_version: 1
+---
+
+# 📄 智谱 GLM-5V-Turbo（OpenClaw/龙虾）发布 | 单条深度解读
+
+> [← 返回国内速报](../briefing/domestic_briefing_20260419.md) ｜ [← 返回智谱/GLM 分类解读](../category/category_zhipu.md)
+
+---
+
+**来源**：[新浪财经](https://k.sina.com.cn/article_5952915705_162d248f906702pr5s.html) ｜ [智谱开放文档](https://docs.bigmodel.cn/cn/guide/models/text/glm-5-turbo)
+**事件日期**：04-16
+**可靠性**：✅ 官方发布
+
+---
+
+### 事实摘要
+
+- 智谱于 **04-16** 发布 GLM-5V-Turbo（内部代号"OpenClaw/龙虾"）
+- 全球首个面向 **OpenClaw 工作流**深度优化的原生多模态 Coding 基座模型
+- 融合视觉+编程能力，支持文本/图片/视频多模态输入
+- ZClawBench 评分仅次于 Claude Opus 4.6，定价较 GLM-5V-Pro 低约 40%
+
+### 关键细节
+
+**GLM-5V 系列产品矩阵：**
+
+| 版本 | 定位 | 适用场景 | 定价 |
+|------|------|---------|------|
+| GLM-5V-Pro | 旗舰，最强性能 | 复杂多模态推理 | 最高 |
+| **GLM-5V-Turbo** | 轻量高速，高性价比 | 高频图片/视频处理 + Coding | Pro 的 60% |
+| GLM-5V-Flash | 极速，最低成本 | 简单视觉任务 | 最低 |
+
+**GLM-5V-Turbo 核心能力：**
+- **OpenClaw 深度优化**：专为 OpenClaw（龙虾）工作流设计，支持长程规划和操作执行
+- **多模态输入**：文本 / 图片 / 视频，擅长 OCR、图表理解、财报/PPT 解析
+- **视觉+编程融合**：可理解截图中的代码，生成对应的修复方案
+- **ZClawBench**：智谱自研的 OpenClaw 工作流评测基准，GLM-5V-Turbo 仅次于 Claude Opus 4.6
+
+**"OpenClaw/龙虾"命名背景：**
+- OpenClaw 是原 Moltbot/Clawdbot，自托管开源 AI 编码 Agent
+- 已被 Qwen3.6-35B-A3B、GLM-5V-Turbo 等国产模型深度适配
+- "龙虾"是 OpenClaw 的中文社区昵称（Claw = 爪/钳）
+
+### 解读：这意味着什么
+
+> 以下为编辑分析，非原文内容
+
+- **解读**：GLM-5V-Turbo 是多模态 API 市场"轻量化"趋势的缩影——各家都在推 Turbo/Flash/Mini 版本，以低价切入高频视觉任务市场。这类任务对延迟和成本敏感，但对最高精度需求没有旗舰版那么高
+- **解读**：智谱选择以"OpenClaw 深度优化"作为差异化卖点，是一个精准的生态绑定策略。OpenClaw 在国内开发者社区有一定用户基础，GLM-5V-Turbo 通过深度适配获得这部分用户的优先选择权
+- **解读**：视觉+编程融合能力（看截图写代码）是 2026 年多模态模型的重要演进方向，与 Claude Opus 4.7 的视觉能力提升、Qwen3.6 的多模态基准超越 Claude Sonnet 4.5 形成呼应
+- **推荐场景**：每天处理大量图片/文档的企业应用（电商/金融/法律）、需要中文 OCR 精度的场景、已在使用智谱 API 的团队
+- **不推荐场景**：需要最高精度的复杂推理（选 GLM-5V-Pro 或 Claude Sonnet）、需要开源/本地部署（智谱无开源版本）

@@ -1,0 +1,27 @@
+{
+  "id": "category_minimax",
+  "slug": "category_minimax",
+  "edition_date": "2026-04-19",
+  "region": "domestic",
+  "tier": "category",
+  "title": "MiniMax 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+  "summary": "--- 本周 MiniMax 的核心动态是 MaxHermes 云端沙箱 AI 技能自主进化系统上线。这是国内首个将 AI 技能进化能力放在云端沙箱中运行的产品，直接对标海外的 OpenClaw（龙虾）。 ---",
+  "content": "\n# 🔍 MiniMax 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回国内速报](../briefing/domestic_briefing_20260419.md)\n\n---\n\n## 本周 MiniMax 动态概览\n\n本周 MiniMax 的核心动态是 **MaxHermes 云端沙箱 AI 技能自主进化系统上线**。这是国内首个将 AI 技能进化能力放在云端沙箱中运行的产品，直接对标海外的 OpenClaw（龙虾）。\n\n---\n\n## 事件：MiniMax MaxHermes 云端沙箱上线（04-16）\n\n**来源**：[电子工程世界 04-16](https://www.eet-china.com/mp/a488272.html) ｜ [AIBase 04-16](https://www.aibase.com/ja/news/www.aibase.com/zh/news/27167)\n**可靠性**：✅ 官方发布\n\n### 事实摘要\n\n- MiniMax 于 04-16 上线 MaxHermes，定位为\"全球首个云端沙箱 AI 技能自主进化系统\"\n- 核心能力：AI 技能在云端沙箱中自主学习与进化，无需人工干预\n- 直接挑战 OpenClaw（龙虾），后者以连接飞书、钉钉等办公软件著称\n\n### 关键细节\n\n- **云端沙箱**：技能进化在隔离的云端沙箱中运行，安全可控\n- **自主进化**：AI 可根据使用反馈自动优化技能，降低人工调优成本\n- **竞争定位**：官方明确对标 OpenClaw，显示 MiniMax 在 Agent 工具市场的野心\n\n### 解读：这意味着什么\n\n- **解读**：MaxHermes 的\"自主进化\"能力是 Agentic Engineering 的重要方向——让 Agent 自我改进而非依赖人工 Prompt 工程\n- **解读**：云端沙箱 + 自主进化的组合，与 OpenAI Agents SDK 本周发布的沙盒架构（Harness + 沙盒 + Manifest）在方向上高度一致，说明这是行业共识\n- **解读**：对国内开发者而言，MaxHermes 提供了一个无需自建沙盒基础设施即可实现 Agent 技能进化的平台，值得关注\n\n---\n\n## 本周 MiniMax 单条解读\n\n| 条目 | 链接 |\n|------|------|\n| MiniMax MaxHermes 云端沙箱 AI 技能自主进化上线 | [→ 单条解读](../items/item_maxhermes.md) |\n",
+  "source_url": "",
+  "source_name": "category_minimax",
+  "tags": [
+    "MiniMax",
+    "MaxHermes",
+    "云端沙箱",
+    "AI技能进化",
+    "Agent"
+  ],
+  "reactions": {
+    "like": 0,
+    "fire": 0,
+    "insightful": 0
+  },
+  "user_reaction": null,
+  "published_at": "2026-04-19T00:00:00.000Z",
+  "created_at": "2026-04-19T00:00:00.000Z"
+}

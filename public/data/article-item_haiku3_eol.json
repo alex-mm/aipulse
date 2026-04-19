@@ -1,0 +1,27 @@
+{
+  "id": "item_haiku3_eol",
+  "slug": "item_haiku3_eol",
+  "edition_date": "2026-04-19",
+  "region": "overseas",
+  "tier": "item",
+  "title": "Claude Haiku 3 今日正式退役 | 2026-04-13 ~ 2026-04-19",
+  "summary": "--- 来源：Anthropic 官方 事件日期：04-19（今日生效）",
+  "content": "\n# 📄 Claude Haiku 3 今日正式退役 | 单条深度解读\n\n> [← 返回海外速报](../briefing/overseas_briefing_20260419.md) ｜ [← 返回 Anthropic 分类解读](../category/category_anthropic.md)\n\n---\n\n**来源**：[Anthropic 官方](https://www.anthropic.com/news/claude-haiku-3-eol)\n**事件日期**：04-19（今日生效）\n**可靠性**：✅ 官方公告\n\n---\n\n### 事实摘要\n\n- Claude Haiku 3（模型 ID：`claude-haiku-3-20240307`）于 **2026-04-19** 正式退役\n- API 即日起对该模型 ID 的调用将返回错误，无法继续使用\n- 官方推荐迁移目标：`claude-haiku-3-5`（Haiku 3.5）\n\n### 关键细节\n\n- **退役模型 ID**：`claude-haiku-3-20240307`\n- **迁移目标**：`claude-haiku-3-5`\n- **影响**：所有硬编码旧模型 ID 的应用即日起报错\n- **退役流程**：Legacy（遗留）→ Retired（退役），API 直接返回错误\n\n### 解读：这意味着什么\n\n> 以下为编辑分析，非原文内容\n\n- **解读**：Haiku 3 退役是 Anthropic 清理模型版本的常规操作，但\"即日报错\"的硬截止方式对未及时迁移的开发者影响较大，需立即检查代码中的模型 ID 硬编码\n- **解读**：迁移到 Haiku 3.5 通常是无缝的，但需注意 Haiku 3.5 的定价和能力与 Haiku 3 存在差异，建议迁移后重新评估成本\n- **解读**：对国内开发者而言，如果通过第三方 API 中转服务使用 Claude，需确认中转服务是否已同步更新模型 ID 映射\n\n### 迁移操作\n\n将代码中的模型 ID 从 `claude-haiku-3-20240307` 替换为 `claude-haiku-3-5`\n",
+  "source_url": "",
+  "source_name": "item_haiku3_eol",
+  "tags": [
+    "Anthropic",
+    "Claude",
+    "Haiku",
+    "模型退役",
+    "迁移"
+  ],
+  "reactions": {
+    "like": 0,
+    "fire": 0,
+    "insightful": 0
+  },
+  "user_reaction": null,
+  "published_at": "2026-04-19T00:00:00.000Z",
+  "created_at": "2026-04-19T00:00:00.000Z"
+}

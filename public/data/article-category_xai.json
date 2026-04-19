@@ -1,0 +1,28 @@
+{
+  "id": "category_xai",
+  "slug": "category_xai",
+  "edition_date": "2026-04-19",
+  "region": "overseas",
+  "tier": "category",
+  "title": "xAI 分类深度解读 | 2026-04-13 ~ 2026-04-19",
+  "summary": "--- 本周 xAI 的核心动态是 Grok STT/TTS 音频 API 正式发布，以 $0.10/小时的定价切入语音 AI 市场，官方声称是市场最低价。 ---",
+  "content": "\n# 🔍 xAI 分类深度解读 | 2026-04-13 ~ 2026-04-19\n\n> 📅 时间窗口：2026-04-13 ~ 2026-04-19 &nbsp;·&nbsp; 阅读约 10 分钟\n>\n> [← 返回海外速报](../briefing/overseas_briefing_20260419.md)\n\n---\n\n## 本周 xAI 动态概览\n\n本周 xAI 的核心动态是 **Grok STT/TTS 音频 API 正式发布**，以 $0.10/小时的定价切入语音 AI 市场，官方声称是市场最低价。\n\n---\n\n## 事件：xAI Grok STT/TTS 音频 API 正式发布（04-17）\n\n**来源**：[xAI 官方博客](https://x.ai/blog)\n**可靠性**：✅ 官方发布\n\n### 事实摘要\n\n- xAI 于 04-17 正式发布 Grok STT（语音转文字）和 TTS（文字转语音）音频 API\n- 定价：$0.10/小时，官方声称是市场最低价\n- 支持 25 种语言，覆盖主流语言市场\n\n### 关键细节\n\n- **STT（Speech-to-Text）**：语音转文字，$0.10/小时\n- **TTS（Text-to-Speech）**：文字转语音，$0.10/小时\n- **语言支持**：25 种语言\n- **定价对比**：OpenAI Whisper API 约 $0.006/分钟（$0.36/小时），xAI 定价约为其 1/3.6\n\n### 解读\n\n- **解读**：$0.10/小时 的定价确实具有竞争力，若质量达标，将对 OpenAI Whisper 和 ElevenLabs 等语音 API 供应商形成价格压力\n- **解读**：25 种语言支持是重要的国际化信号，xAI 正在将 Grok 从英语市场向全球市场扩展\n- **解读**：语音 API 的发布完善了 xAI 的 API 产品矩阵（文本 → 图像 → 语音），向 OpenAI 全栈 API 平台靠拢\n- **解读**：对国内开发者而言，xAI API 目前在国内访问存在限制，实际可用性需验证\n\n---\n\n## 本周 xAI 单条解读\n\n| 条目 | 链接 |\n|------|------|\n| xAI Grok STT/TTS 音频 API 正式发布 | [→ 单条解读](../items/item_grok_audio.md) |\n",
+  "source_url": "",
+  "source_name": "category_xai",
+  "tags": [
+    "xAI",
+    "Grok",
+    "STT",
+    "TTS",
+    "语音API",
+    "多语言"
+  ],
+  "reactions": {
+    "like": 0,
+    "fire": 0,
+    "insightful": 0
+  },
+  "user_reaction": null,
+  "published_at": "2026-04-19T00:00:00.000Z",
+  "created_at": "2026-04-19T00:00:00.000Z"
+}

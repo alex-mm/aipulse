@@ -1,0 +1,25 @@
+name: Seed Articles (三层内容架构 mock 数据)
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: '输入 yes 确认执行（会删除旧的 deep/analysis 文章并重新写入）'
+        required: true
+        default: 'no'
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm == 'yes'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run seed script
+        run: node scripts/seed_articles.cjs
