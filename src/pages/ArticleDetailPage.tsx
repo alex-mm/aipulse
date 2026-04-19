@@ -207,8 +207,8 @@ export default function ArticleDetailPage() {
     const contentLines = lines.slice(idx).filter(line => {
       const trimmed = line.trim()
       if (trimmed.startsWith('*') && trimmed.endsWith('*') && trimmed.length > 2) return false
-      // 过滤掉独立成行的导航链接（→ 分类深度解读 / → 单条解读 / ← 返回速览）
-      if (/^\[[\s→←].*(分类深度解读|单条解读|返回速览|返回列表)\]/.test(trimmed)) return false
+      // 过滤掉独立成行的导航链接行（含 ← 返回xxx / → 分类深度解读 等，支持同行多个链接）
+      if (/\[[\s→←][^\]]*\]\([^)]*\)/.test(trimmed) && /返回|速报|速览|分类|解读|列表/.test(trimmed)) return false
       return true
     })
 
