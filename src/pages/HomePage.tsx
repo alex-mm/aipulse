@@ -113,6 +113,9 @@ export default function HomePage() {
 
   /** 复用 ArticleDetailPage 的 markdownComponents：h2 加阵营深读入口，li 加单条深析入口 */
   const markdownComponents = useMemo(() => ({
+    ul: ({ children }: { children?: ReactNode }) => (
+      <ul style={{ paddingLeft: 0, listStyle: 'none' }}>{children}</ul>
+    ),
     h2: ({ children }: { children?: ReactNode }) => {
       const text = extractText(children).toLowerCase()
       const matched = deepArticles.find(a =>
