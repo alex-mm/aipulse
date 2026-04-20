@@ -25,8 +25,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <RouteTracker />
-      <div className="min-h-screen flex flex-col bg-grid" style={{backgroundColor:'var(--c-bg)'}}>
-        <Header />
+        <div className="min-h-screen flex flex-col bg-grid overflow-x-hidden" style={{backgroundColor:'var(--c-bg)'}}>        <Header />
         <main className="flex-1">
           <Suspense fallback={null}>
             <Routes>
