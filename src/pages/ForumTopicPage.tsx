@@ -81,7 +81,7 @@ export default function ForumTopicPage() {
     <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       <article>
         {/* 面包屑 + 分类标签同行 */}
-        <div className="flex items-center gap-2 text-sm mb-3">
+        <div className="flex items-center gap-2 text-sm mb-3" style={{color:'var(--c-tx-m)'}}>
           <Link
             to="/forum"
             className="transition-colors"
@@ -91,12 +91,8 @@ export default function ForumTopicPage() {
           >
             讨论
           </Link>
-          <span style={{color:'var(--c-tx-d)'}}>·</span>
-          <span className="px-2 py-0.5 text-xs rounded-full" style={{
-            background: 'var(--c-glow)',
-            color: 'var(--c-tx-s)',
-            border: '1px solid rgba(110,231,247,0.1)',
-          }}>
+          <span>·</span>
+          <span style={{color:'var(--c-tx-s)'}}>
             {categoryLabels[topic.category] || topic.category}
           </span>
           {topic.is_pinned && <span className="text-xs" style={{color:'#fbbf24'}}>置顶</span>}
