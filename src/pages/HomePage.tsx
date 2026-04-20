@@ -146,8 +146,8 @@ export default function HomePage() {
       ) ?? null
       return (
         <li className="mt-3">
-          <div className="flex items-start gap-2">
-            <span className="flex-1">{children}</span>
+          <div className="flex items-start gap-2 min-w-0">
+            <span className="flex-1 min-w-0 break-words">{children}</span>
             {matched && (
               <Link
                 to={`/${matched.region}/${matched.tier}/${matched.id}`}
