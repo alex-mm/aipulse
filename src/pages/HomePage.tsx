@@ -82,8 +82,8 @@ export default function HomePage() {
 
   const editionLabel = useMemo(() => {
     if (!edition) return ''
-    const num = edition.edition_number ?? ''
-    const date = edition.published_at ? new Date(edition.published_at).toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' }) : ''
+    const num = edition.number ?? ''
+    const date = edition.date ? new Date(edition.date).toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' }) : ''
     return num ? `第 ${num} 期 · ${date}` : date
   }, [edition])
 
