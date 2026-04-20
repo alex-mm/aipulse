@@ -42,18 +42,26 @@ export default function ForumTopicPage() {
 
   const handleReact = async (type: string) => {
     if (!topic) return
+    const isToggleOff = topic.user_reaction === type
     await postTopicReaction(topic.id, type)
-    setTopic((prev) => prev ? {
-      ...prev,
-      reactions: { ...prev.reactions, [type]: (prev.reactions[type as keyof typeof prev.reactions] || 0) + 1 },
-      user_reaction: type,
-    } : prev)
+    setTopic((prev) => {
+      if (!prev) return prev
+      const currentCount = prev.reactions[type as keyof typeof prev.reactions] || 0
+      return {
+        ...prev,
+        reactions: {
+          ...prev.reactions,
+          [type]: isToggleOff ? Math.max(0, currentCount - 1) : currentCount + 1,
+        },
+        user_reaction: isToggleOff ? null : type,
+      }
+    })
   }
 
   const handleComment = async (data: { nickname: string; content: string; parent_id?: string }) => {
     if (!topic) return
     const comment = await postTopicComment(topic.id, data)
-    setComments((prev) => [...prev, comment])
+    if (comment) setComments((prev) => [...prev, comment])
   }
 
   if (loading) {
@@ -71,38 +79,51 @@ export default function ForumTopicPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
-      <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
-        <Link to="/forum" className="hover:text-primary">讨论</Link>
+      {/* 面包屑 */}
+      <div className="flex items-center gap-2 text-sm mb-4" style={{color:'var(--c-tx-m)'}}>
+        <Link
+          to="/forum"
+          className="transition-colors"
+          style={{color:'var(--c-tx-m)'}}
+          onMouseEnter={e => (e.currentTarget.style.color='var(--c-ac)')}
+          onMouseLeave={e => (e.currentTarget.style.color='var(--c-tx-m)')}
+        >
+          讨论
+        </Link>
         <span>/</span>
-        <span className="text-gray-600">正文</span>
+        <span style={{color:'var(--c-tx-d)'}}>正文</span>
       </div>
 
       <article>
         <div className="flex items-center gap-2 mb-3">
-          <span className="px-2 py-0.5 text-xs bg-gray-100 text-gray-500 rounded-full">
+          <span className="px-2 py-0.5 text-xs rounded-full" style={{
+            background: 'var(--c-glow)',
+            color: 'var(--c-tx-s)',
+            border: '1px solid rgba(110,231,247,0.1)',
+          }}>
             {categoryLabels[topic.category] || topic.category}
           </span>
           {topic.is_pinned && <span className="text-xs" style={{color:'#fbbf24'}}>置顶</span>}
         </div>
 
-        <h1 className="text-2xl font-bold text-gray-900 mb-3">{topic.title}</h1>
+        <h1 className="text-2xl font-bold mb-3" style={{color:'var(--c-tx)'}}>{topic.title}</h1>
 
-        <div className="flex items-center gap-3 text-sm text-gray-400 mb-6">
-          <span className="font-medium text-primary">{topic.author_nick}</span>
+        <div className="flex items-center gap-3 text-sm mb-6" style={{color:'var(--c-tx-m)'}}>
+          <span className="font-medium" style={{color:'var(--c-ac)'}}>{topic.author_nick}</span>
           <span>{new Date(topic.created_at).toLocaleString('zh-CN')}</span>
-          <span>{topic.view_count} 浏览</span>
+          <span>{topic.view_count + 1} 浏览</span>
           <div className="ml-auto">
             <ShareBar url={window.location.href} title={topic.title} />
           </div>
         </div>
 
-        <div className="prose prose-gray max-w-none mb-6">
+        <div className="prose-dark mb-6">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {topic.content}
           </ReactMarkdown>
         </div>
 
-        <div className="border-t border-gray-100 pt-4 mb-6">
+        <div className="pt-4 mb-6" style={{borderTop:'1px solid var(--c-bd)'}}>
           <Reactions
             reactions={topic.reactions}
             userReaction={topic.user_reaction}
@@ -111,7 +132,7 @@ export default function ForumTopicPage() {
         </div>
       </article>
 
-      <div className="border-t border-gray-100 pt-6">
+      <div className="pt-6" style={{borderTop:'1px solid var(--c-bd)'}}>
         <CommentSection comments={comments} onSubmit={handleComment} />
       </div>
     </div>
