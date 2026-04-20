@@ -13,3 +13,9 @@ window.addEventListener('vite:preloadError', () => {
 })
 
 createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </StrictMode>,
+)
