@@ -61,7 +61,7 @@ export default function CommentSection({ comments, onSubmit }: Props) {
       {comment.replies?.map((reply) => renderComment(reply, depth + 1))}
     </div>
   )
-  }
+}
 
   return (
     <div>
