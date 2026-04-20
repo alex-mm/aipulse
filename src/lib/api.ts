@@ -163,9 +163,9 @@ export async function fetchArticleWithContext(id: string): Promise<{
   const staticContext = await fetchStatic<{ article: Article; deep: Article[]; analysis: Article[] }>(`context-${slug}.json`)
   if (staticContext) return staticContext
 
-  // item/category 类型只有单篇文章文件，无 context
+  // item/category 类型只有单篇文章文件，无 context，包装成统一结构返回
   const staticArticle = await fetchStatic<Article>(`article-${slug}.json`)
-  if (staticArticle) return staticArticle as unknown as { article: Article; deep: Article[]; analysis: Article[] }
+  if (staticArticle) return { article: staticArticle, deep: [], analysis: [] }
 
   // fallback 到 API
   const res = await fetch(`${API_BASE}/articles/${id}?include=context`)
