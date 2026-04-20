@@ -53,7 +53,7 @@ export default function ForumPage() {
             <button
               key={key}
               onClick={() => setActiveCategory(activeCategory === key ? undefined : key)}
-              className="flex items-center gap-1 px-3 py-1 text-sm rounded-full transition-colors"
+              className="flex items-center gap-1 px-3 py-1 text-sm rounded-full transition-colors whitespace-nowrap"
               style={activeCategory === key ? {
                 background: 'rgba(110,231,247,0.1)',
                 color: 'var(--c-ac)',
