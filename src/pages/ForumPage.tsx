@@ -46,60 +46,60 @@ export default function ForumPage() {
         </Link>
       </div>
 
-      {/* Filters：分类按钮一行，排序按钮右对齐同行 */}
-      <div className="mb-6">
-        <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center gap-1 overflow-x-auto">
-            {categories.map(({ key, label, icon: Icon }) => (
-              <button
-                key={key}
-                onClick={() => setActiveCategory(activeCategory === key ? undefined : key)}
-                className="flex items-center gap-1 px-3 py-1 text-sm rounded-full transition-colors whitespace-nowrap flex-shrink-0"
-                style={activeCategory === key ? {
-                  background: 'rgba(110,231,247,0.1)',
-                  color: 'var(--c-ac)',
-                  border: '1px solid rgba(110,231,247,0.3)',
-                } : {
-                  background: 'var(--c-bg-card)',
-                  color: 'var(--c-tx-s)',
-                  border: '1px solid var(--c-bd)',
-                }}
-              >
-                <Icon size={12} />
-                {label}
-              </button>
-            ))}
-          </div>
-          <div className="flex items-center gap-1 flex-shrink-0">
+      {/* Filters：第一行分类，第二行排序 */}
+      <div className="mb-6 space-y-2">
+        {/* 分类按钮 */}
+        <div className="flex items-center gap-1 flex-wrap">
+          {categories.map(({ key, label, icon: Icon }) => (
             <button
-              onClick={() => setSort('latest')}
-              className="px-3 py-1 text-sm rounded-full transition-colors whitespace-nowrap"
-              style={sort === 'latest' ? {
-                background: 'rgba(110,231,247,0.12)',
+              key={key}
+              onClick={() => setActiveCategory(activeCategory === key ? undefined : key)}
+              className="flex items-center gap-1 px-3 py-1 text-sm rounded-full transition-colors whitespace-nowrap"
+              style={activeCategory === key ? {
+                background: 'rgba(110,231,247,0.1)',
                 color: 'var(--c-ac)',
                 border: '1px solid rgba(110,231,247,0.3)',
               } : {
+                background: 'var(--c-bg-card)',
                 color: 'var(--c-tx-s)',
-                border: '1px solid transparent',
+                border: '1px solid var(--c-bd)',
               }}
             >
-              最新
+              <Icon size={12} />
+              {label}
             </button>
-            <button
-              onClick={() => setSort('hot')}
-              className="px-3 py-1 text-sm rounded-full transition-colors whitespace-nowrap"
-              style={sort === 'hot' ? {
-                background: 'rgba(110,231,247,0.12)',
-                color: 'var(--c-ac)',
-                border: '1px solid rgba(110,231,247,0.3)',
-              } : {
-                color: 'var(--c-tx-s)',
-                border: '1px solid transparent',
-              }}
-            >
-              最热
-            </button>
-          </div>
+          ))}
+        </div>
+        {/* 排序按钮 */}
+        <div className="flex items-center gap-1">
+          <button
+            onClick={() => setSort('latest')}
+            className="px-3 py-1 text-sm rounded-full transition-colors whitespace-nowrap"
+            style={sort === 'latest' ? {
+              background: 'rgba(110,231,247,0.12)',
+              color: 'var(--c-ac)',
+              border: '1px solid rgba(110,231,247,0.3)',
+            } : {
+              color: 'var(--c-tx-s)',
+              border: '1px solid transparent',
+            }}
+          >
+            最新
+          </button>
+          <button
+            onClick={() => setSort('hot')}
+            className="px-3 py-1 text-sm rounded-full transition-colors whitespace-nowrap"
+            style={sort === 'hot' ? {
+              background: 'rgba(110,231,247,0.12)',
+              color: 'var(--c-ac)',
+              border: '1px solid rgba(110,231,247,0.3)',
+            } : {
+              color: 'var(--c-tx-s)',
+              border: '1px solid transparent',
+            }}
+          >
+            最热
+          </button>
         </div>
       </div>
 
