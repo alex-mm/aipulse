@@ -175,7 +175,7 @@ export default function HomePage() {
 
   if (loading) {
     return (
-      <div className="max-w-3xl mx-auto px-4 py-12">
+      <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
         <div className="flex items-center justify-center gap-2 py-20" style={{color:'var(--c-tx-m)'}}>
           <Zap size={16} className="animate-pulse" style={{color:'var(--c-ac)'}} />
           <span>正在获取最新情报...</span>
@@ -185,7 +185,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
+    <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
 
       {/* Tab 切换：海外 / 国内 */}
       <div className="flex items-center justify-between mb-5">

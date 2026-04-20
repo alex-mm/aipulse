@@ -57,12 +57,12 @@ export default function ForumTopicPage() {
   }
 
   if (loading) {
-    return <div className="max-w-3xl mx-auto px-4 py-12 text-center text-gray-400">加载中...</div>
+    return <div className="max-w-5xl mx-auto px-4 py-12 text-center text-gray-400">加载中...</div>
   }
 
   if (!topic) {
     return (
-      <div className="max-w-3xl mx-auto px-4 py-12 text-center">
+      <div className="max-w-5xl mx-auto px-4 py-12 text-center">
         <p className="text-gray-400">帖子不存在</p>
         <Link to="/forum" className="text-primary text-sm mt-2 inline-block">返回讨论区</Link>
       </div>
@@ -70,7 +70,7 @@ export default function ForumTopicPage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-6">
+    <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
         <Link to="/forum" className="hover:text-primary">讨论</Link>
         <span>/</span>

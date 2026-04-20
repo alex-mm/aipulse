@@ -32,7 +32,7 @@ export default function ForumPage() {
   }, [activeCategory, sort])
 
   return (
-    <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
+    <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold flex items-center gap-2" style={{color:'var(--c-ac)'}}>
           <MessageSquare size={20} />

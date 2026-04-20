@@ -22,7 +22,7 @@ export default function ArchivePage() {
   }, [])
 
   return (
-    <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
+    <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       <h1 className="text-2xl font-bold mb-6 flex items-center gap-2" style={{color:'#a78bfa'}}><Clock size={20} /> 往期回顾</h1>
 
       {loading ? (

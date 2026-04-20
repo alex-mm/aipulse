@@ -54,7 +54,9 @@ export default function ArticleCard({ article }: Props) {
         ))}
       </div>
       <h3 className="font-medium mb-1 line-clamp-2 text-sm" style={{color:'var(--c-tx2)'}}>{article.title}</h3>
-      <p className="text-xs line-clamp-2" style={{color:'var(--c-tx-s)'}}>{article.summary}</p>
+      <p className="text-xs line-clamp-2" style={{color:'var(--c-tx-s)'}}>
+        {(article.summary || '').replace(/\s*[—–-]\s*\[[^\]]+\]\([^)]*\)(\s*[｜|]\s*\[→[^\]]*\]\([^)]*\))*/g, '').replace(/\s*[｜|]\s*\[→[^\]]*\]\([^)]*\)/g, '').replace(/\[→[^\]]*\]\([^)]*\)/g, '').trim()}
+      </p>
       <div className="flex items-center gap-3 mt-3 text-xs" style={{color:'var(--c-tx-m)'}}>
         <span>{article.source_name}</span>
         <span>{new Date(article.published_at).toLocaleDateString('zh-CN')}</span>

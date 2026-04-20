@@ -265,12 +265,12 @@ export default function ArticleDetailPage() {
   }
 
   if (loading) {
-    return <div className="max-w-3xl mx-auto px-4 py-12 text-center" style={{color:'var(--c-tx-m)'}}>加载中...</div>
+    return <div className="max-w-5xl mx-auto px-4 py-12 text-center" style={{color:'var(--c-tx-m)'}}>加载中...</div>
   }
 
   if (!article) {
     return (
-      <div className="max-w-3xl mx-auto px-4 py-12 text-center">
+      <div className="max-w-5xl mx-auto px-4 py-12 text-center">
         <p style={{color:'var(--c-tx-m)'}}>文章不存在</p>
         <Link to={`/${region}/${tier}`} className="text-sm mt-2 inline-block" style={{color:'var(--c-ac)'}}>返回列表</Link>
       </div>

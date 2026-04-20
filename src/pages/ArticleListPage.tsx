@@ -53,7 +53,7 @@ export default function ArticleListPage() {
   }, [region, tier, editionIdParam])
 
   return (
-    <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
+    <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       {/* 面包屑 + 标题 + 期号 */}
       <div className="flex items-center gap-2 text-sm mb-3">
         <Link
