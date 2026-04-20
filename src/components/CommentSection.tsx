@@ -30,7 +30,9 @@ export default function CommentSection({ comments, onSubmit }: Props) {
     setReplyTo(null)
   }
 
-  const renderComment = (comment: Comment, depth = 0) => (
+  const renderComment = (comment: Comment | null, depth = 0) => {
+    if (!comment) return null
+    return (
     <div
       key={comment.id}
       className={depth > 0 ? 'ml-6 pl-4' : ''}
@@ -59,6 +61,7 @@ export default function CommentSection({ comments, onSubmit }: Props) {
       {comment.replies?.map((reply) => renderComment(reply, depth + 1))}
     </div>
   )
+  }
 
   return (
     <div>
