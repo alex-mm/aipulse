@@ -1,12 +1,23 @@
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState, useMemo, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { Globe, Cpu, Zap, ChevronRight, Clock } from 'lucide-react'
+import { Globe, Cpu, Zap, ChevronRight, Clock, BookOpen, Microscope } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
-import { fetchLatestEdition, fetchArticles, fetchArticle, type Article, type Edition } from '../lib/api'
+import { fetchLatestEdition, fetchArticles, fetchArticleWithContext, type Article, type Edition } from '../lib/api'
 
 type RegionTab = 'overseas' | 'domestic'
+
+/** 从 React children 递归提取纯文本 */
+function extractText(children: ReactNode): string {
+  if (typeof children === 'string') return children
+  if (typeof children === 'number') return String(children)
+  if (Array.isArray(children)) return children.map(extractText).join('')
+  if (children && typeof children === 'object' && 'props' in children) {
+    return extractText((children as { props: { children?: ReactNode } }).props.children)
+  }
+  return ''
+}
 
 /** 复用 ArticleDetailPage 的内容清洗逻辑：去掉 h1、blockquote meta、导航链接、斜体注释、emoji */
 function cleanArticleContent(content: string): { cleanContent: string; readingMeta: string } {
@@ -44,11 +55,17 @@ function cleanArticleContent(content: string): { cleanContent: string; readingMe
   return { cleanContent, readingMeta }
 }
 
+interface BriefContext {
+  article: Article
+  deep: Article[]
+  analysis: Article[]
+}
+
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState<RegionTab>('overseas')
   const [edition, setEdition] = useState<Edition | null>(null)
-  const [overseasArticle, setOverseasArticle] = useState<Article | null>(null)
-  const [domesticArticle, setDomesticArticle] = useState<Article | null>(null)
+  const [overseasCtx, setOverseasCtx] = useState<BriefContext | null>(null)
+  const [domesticCtx, setDomesticCtx] = useState<BriefContext | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -57,17 +74,17 @@ export default function HomePage() {
         const ed = await fetchLatestEdition()
         if (ed) {
           setEdition(ed)
-          // 先拿文章列表（不含 content），再用 id 获取完整内容
           const [ob, db] = await Promise.all([
             fetchArticles({ edition_id: ed.id, region: 'overseas', tier: 'brief' }),
             fetchArticles({ edition_id: ed.id, region: 'domestic', tier: 'brief' }),
           ])
-          const [overseasFull, domesticFull] = await Promise.all([
-            ob[0] ? fetchArticle(ob[0].id) : Promise.resolve(null),
-            db[0] ? fetchArticle(db[0].id) : Promise.resolve(null),
+          // 用 fetchArticleWithContext 获取完整内容 + deep/analysis 关联文章
+          const [overseasResult, domesticResult] = await Promise.all([
+            ob[0] ? fetchArticleWithContext(ob[0].id) : Promise.resolve(null),
+            db[0] ? fetchArticleWithContext(db[0].id) : Promise.resolve(null),
           ])
-          setOverseasArticle(overseasFull)
-          setDomesticArticle(domesticFull)
+          if (overseasResult && 'article' in overseasResult) setOverseasCtx(overseasResult as BriefContext)
+          if (domesticResult && 'article' in domesticResult) setDomesticCtx(domesticResult as BriefContext)
         }
       } catch {
         // show empty state
@@ -78,12 +95,67 @@ export default function HomePage() {
     load()
   }, [])
 
-  const currentArticle = activeTab === 'overseas' ? overseasArticle : domesticArticle
+  const currentCtx = activeTab === 'overseas' ? overseasCtx : domesticCtx
+  const currentArticle = currentCtx?.article ?? null
+  const deepArticles = currentCtx?.deep ?? []
+  const analysisArticles = currentCtx?.analysis ?? []
 
   const { cleanContent, readingMeta } = useMemo(() => {
-    if (!currentArticle) return { cleanContent: '', readingMeta: '' }
+    if (!currentArticle?.content) return { cleanContent: '', readingMeta: '' }
     return cleanArticleContent(currentArticle.content)
   }, [currentArticle])
+
+  /** 复用 ArticleDetailPage 的 markdownComponents：h2 加阵营深读入口，li 加单条深析入口 */
+  const markdownComponents = useMemo(() => ({
+    h2: ({ children }: { children?: ReactNode }) => {
+      const text = extractText(children).toLowerCase()
+      const matched = deepArticles.find(a =>
+        (a.tags || []).some(tag => tag.length >= 2 && text.includes(tag.toLowerCase()))
+      ) ?? null
+      return (
+        <h2 className="flex items-center gap-2 flex-wrap">
+          <span>{children}</span>
+          {matched && (
+            <Link
+              to={`/${matched.region}/${matched.tier}/${matched.id}`}
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium no-underline transition-all cursor-pointer"
+              style={{ background: 'rgba(167,139,250,0.12)', color: '#a78bfa', border: '1px solid rgba(167,139,250,0.35)' }}
+              onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(167,139,250,0.24)'; el.style.borderColor = 'rgba(167,139,250,0.6)' }}
+              onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(167,139,250,0.12)'; el.style.borderColor = 'rgba(167,139,250,0.35)' }}
+            >
+              <BookOpen size={10} />
+              阵营深读 →
+            </Link>
+          )}
+        </h2>
+      )
+    },
+    li: ({ children }: { children?: ReactNode }) => {
+      const text = extractText(children).toLowerCase()
+      const matched = analysisArticles.find(a =>
+        (a.tags || []).some(tag => tag.length >= 2 && text.includes(tag.toLowerCase()))
+      ) ?? null
+      return (
+        <li className="mt-3">
+          <div className="flex items-start gap-2">
+            <span className="flex-1">{children}</span>
+            {matched && (
+              <Link
+                to={`/${matched.region}/${matched.tier}/${matched.id}`}
+                className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium no-underline whitespace-nowrap flex-shrink-0 mt-0.5 transition-all cursor-pointer"
+                style={{ background: 'rgba(251,191,36,0.1)', color: '#fbbf24', border: '1px solid rgba(251,191,36,0.3)' }}
+                onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(251,191,36,0.22)'; el.style.borderColor = 'rgba(251,191,36,0.6)' }}
+                onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(251,191,36,0.1)'; el.style.borderColor = 'rgba(251,191,36,0.3)' }}
+              >
+                <Microscope size={10} />
+                深析 →
+              </Link>
+            )}
+          </div>
+        </li>
+      )
+    },
+  }), [deepArticles, analysisArticles])
 
   const editionLabel = useMemo(() => {
     if (!edition) return ''
@@ -182,11 +254,12 @@ export default function HomePage() {
             </div>
           )}
 
-          {/* Markdown 正文 */}
+          {/* Markdown 正文（含阵营深读/单条深析入口） */}
           <div className="prose-dark">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeHighlight]}
+              components={markdownComponents}
             >
               {cleanContent}
             </ReactMarkdown>

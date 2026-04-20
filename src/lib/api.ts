@@ -100,6 +100,8 @@ export async function fetchArticles(params: {
   const staticArticles = await fetchStatic<Article[]>('articles.json')
   if (staticArticles) {
     return staticArticles.filter(a => {
+      // 静态 JSON 里没有 edition_id，用 edition_date 匹配（edition_id 即 date 字符串）
+      if (params.edition_id && (a as unknown as Record<string, string>).edition_date !== params.edition_id) return false
       if (params.region && a.region !== params.region) return false
       if (params.tier) {
         // deep tab 同时匹配 deep 和 category（阵营深读）
