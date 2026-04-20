@@ -35,24 +35,26 @@ function cleanArticleContent(content: string): { cleanContent: string; readingMe
   }
   while (idx < lines.length && lines[idx].trim() === '') idx++
 
-  const contentLines = lines.slice(idx).filter(line => {
+  // 先把 blockquote 列表行（"> - xxx"）转换为普通列表行（"- xxx"），再统一清洗
+  const normalizedLines = lines.slice(idx).map(line => {
+    const blockquoteListMatch = line.match(/^>\s*(-|\*|\d+\.)\s+(.*)$/)
+    if (blockquoteListMatch) return `${blockquoteListMatch[1]} ${blockquoteListMatch[2]}`
+    return line
+  })
+
+  const contentLines = normalizedLines.filter(line => {
     const trimmed = line.trim()
     if (trimmed.startsWith('*') && trimmed.endsWith('*') && trimmed.length > 2) return false
     // 只过滤整行都是导航链接的行（行首直接是 [→ 或 [← 开头），不过滤列表项里内嵌的链接
     if (/^\[[\s→←]/.test(trimmed) && /返回|速报|速览|分类|解读|列表/.test(trimmed)) return false
     return true
-  }).map(line => {
-    // 去掉列表项末尾的来源链接和「→ 单条解读」内嵌链接（如：— [来源](url) ｜ [→ 单条解读](url)）
-    return line
+  }).map(line =>
+    // 去掉列表项末尾的来源链接和「→ 单条解读」内嵌链接
+    line
       .replace(/\s*[—–-]\s*\[([^\]]+)\]\([^)]*\)(\s*[｜|]\s*\[→[^\]]*\]\([^)]*\))*/g, '')
       .replace(/\s*[｜|]\s*\[→[^\]]*\]\([^)]*\)/g, '')
-  })
-
-  const normalizedLines = contentLines.map(line => {
-    const blockquoteListMatch = line.match(/^>\s*(-|\*|\d+\.)\s+(.*)$/)
-    if (blockquoteListMatch) return `${blockquoteListMatch[1]} ${blockquoteListMatch[2]}`
-    return line
-  })
+      .replace(/\s*\[→[^\]]*\]\([^)]*\)/g, '')
+  )
 
   const emojiRegex = /[\u{1F000}-\u{1FFFF}\u{2600}-\u{27FF}\u{2B00}-\u{2BFF}\u{FE00}-\u{FEFF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA9F}]/gu
   const cleanContent = normalizedLines.join('\n').replace(emojiRegex, '').replace(/^\s+/gm, match => match.replace(/ +/, ' '))
