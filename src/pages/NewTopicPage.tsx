@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { createTopic, type TopicCategory } from '../lib/api'
+import { getWuxiaNick, setWuxiaNick } from '../lib/wuxiaName'
 
 const categories: { key: TopicCategory; label: string }[] = [
   { key: 'discussion', label: '讨论' },
@@ -16,6 +17,10 @@ export default function NewTopicPage() {
   const [category, setCategory] = useState<TopicCategory>('discussion')
   const [nickname, setNickname] = useState('')
   const [submitting, setSubmitting] = useState(false)
+
+  useEffect(() => {
+    setNickname(getWuxiaNick())
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -46,7 +51,7 @@ export default function NewTopicPage() {
           <input
             type="text"
             value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
+            onChange={(e) => { setNickname(e.target.value); if (e.target.value.trim()) setWuxiaNick(e.target.value.trim()) }}
             placeholder="你的昵称"
             className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30"
           />
