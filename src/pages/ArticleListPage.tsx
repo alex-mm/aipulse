@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { useParams, useLocation, useSearchParams } from 'react-router-dom'
+import { useParams, useLocation, useSearchParams, Link } from 'react-router-dom'
+import { ChevronLeft } from 'lucide-react'
 import { fetchLatestEdition, fetchEditions, fetchArticles, type Article, type Edition, type Region, type Tier } from '../lib/api'
 import TierSwitch from '../components/TierSwitch'
 import ArticleCard from '../components/ArticleCard'
@@ -53,10 +54,22 @@ export default function ArticleListPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
-      {/* 标题 + 期号 */}
+      {/* 面包屑 + 标题 + 期号 */}
+      <div className="flex items-center gap-2 text-sm mb-3">
+        <Link
+          to="/"
+          className="flex items-center gap-1 transition-colors"
+          style={{color:'var(--c-tx-m)'}}
+          onMouseEnter={e => (e.currentTarget.style.color='var(--c-ac)')}
+          onMouseLeave={e => (e.currentTarget.style.color='var(--c-tx-m)')}
+        >
+          <ChevronLeft size={14} />
+          首页
+        </Link>
+      </div>
       <div className="flex items-center justify-between mb-2">
         <h1 className="text-lg sm:text-xl font-bold" style={{color: regionColor}}>
-          {regionLabel}动态
+          {regionLabel} · 往期回顾
         </h1>
         {edition && (
           <span className="text-xs" style={{color:'var(--c-tx-m)'}}>
