@@ -302,6 +302,24 @@ async function handleRequest(request: Request, env: Env, url: URL): Promise<Resp
       return json(out, 200, 600)
     }
 
+    // ── 文章 reactions 读取（支持 slug，短缓存 30s） ─────────────────────────
+    const arGetMatch = path.match(/^articles\/([^/]+)\/reactions$/)
+    if (arGetMatch && method === 'GET') {
+      const rawId = arGetMatch[1]
+      const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-/.test(rawId)
+      let uuid = rawId
+      if (!isUuid) {
+        const found = await sbFetch(env, 'articles', { query: `source_name=eq.${rawId}&select=id` })
+        if (!found?.[0]?.id) return json({ reactions: { like: 0, fire: 0, insightful: 0 }, user_reaction: null })
+        uuid = found[0].id
+      }
+      const [reactions, user_reaction] = await Promise.all([
+        getReactions(env, 'article_reactions', 'article_id', uuid),
+        getUserReact(env, 'article_reactions', 'article_id', uuid, ipHash),
+      ])
+      return json({ reactions, user_reaction }, 200, 30)
+    }
+
     // ── 文章 reaction（写操作，不缓存） ──────────────────────────────────────
     const arMatch = path.match(/^articles\/([^/]+)\/react$/)
     if (arMatch && method === 'POST') {

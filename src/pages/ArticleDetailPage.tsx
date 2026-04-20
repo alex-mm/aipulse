@@ -4,7 +4,7 @@ import { ChevronLeft, ExternalLink, Microscope, BookOpen } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
-import { fetchArticleWithContext, fetchArticles, fetchComments, postComment, postReaction, type Article, type Comment, type Region, type Tier } from '../lib/api'
+import { fetchArticleWithContext, fetchArticles, fetchComments, fetchReactions, postComment, postReaction, type Article, type Comment, type Region, type Tier } from '../lib/api'
 import Reactions from '../components/Reactions'
 import CommentSection from '../components/CommentSection'
 import ShareBar from '../components/ShareBar'
@@ -88,9 +88,17 @@ export default function ArticleDetailPage() {
       setLoading(false)
     })
 
-    // 评论和点赞异步后台加载，不阻塞文章渲染
+    // 评论和实时 reactions 异步后台加载，不阻塞文章渲染
     fetchComments(id)
       .then(c => setComments(c))
+      .catch(() => {})
+
+    // 从 API 拉取实时 reactions（静态 JSON 里的 reactions 是构建时快照，需要覆盖）
+    fetchReactions(id)
+      .then(data => {
+        if (!data) return
+        setArticle(prev => prev ? { ...prev, reactions: data.reactions, user_reaction: data.user_reaction } : prev)
+      })
       .catch(() => {})
   }, [id])
 

@@ -175,6 +175,16 @@ export async function fetchArticleWithContext(id: string): Promise<{
 
 // --- Reactions ---
 
+/** 获取文章实时 reactions 和当前用户的 reaction（支持 slug） */
+export async function fetchReactions(articleId: string): Promise<{
+  reactions: { like: number; fire: number; insightful: number }
+  user_reaction: string | null
+} | null> {
+  const res = await fetch(`${API_BASE}/articles/${articleId}/reactions`)
+  if (!res.ok) return null
+  return res.json()
+}
+
 export async function postReaction(articleId: string, type: string): Promise<void> {
   await fetch(`${API_BASE}/articles/${articleId}/react`, {
     method: 'POST',
