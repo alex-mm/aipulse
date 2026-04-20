@@ -4,7 +4,7 @@ import { Globe, Cpu, Zap, ChevronRight, Clock } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
-import { fetchLatestEdition, fetchArticles, type Article, type Edition } from '../lib/api'
+import { fetchLatestEdition, fetchArticles, fetchArticle, type Article, type Edition } from '../lib/api'
 
 type RegionTab = 'overseas' | 'domestic'
 
@@ -57,12 +57,17 @@ export default function HomePage() {
         const ed = await fetchLatestEdition()
         if (ed) {
           setEdition(ed)
+          // 先拿文章列表（不含 content），再用 id 获取完整内容
           const [ob, db] = await Promise.all([
             fetchArticles({ edition_id: ed.id, region: 'overseas', tier: 'brief' }),
             fetchArticles({ edition_id: ed.id, region: 'domestic', tier: 'brief' }),
           ])
-          setOverseasArticle(ob[0] || null)
-          setDomesticArticle(db[0] || null)
+          const [overseasFull, domesticFull] = await Promise.all([
+            ob[0] ? fetchArticle(ob[0].id) : Promise.resolve(null),
+            db[0] ? fetchArticle(db[0].id) : Promise.resolve(null),
+          ])
+          setOverseasArticle(overseasFull)
+          setDomesticArticle(domesticFull)
         }
       } catch {
         // show empty state
