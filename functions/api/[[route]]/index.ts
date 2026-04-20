@@ -307,16 +307,32 @@ async function handleRequest(request: Request, env: Env, url: URL): Promise<Resp
     if (arMatch && method === 'POST') {
       const b = await request.json() as { type: string }
       if (!['like','fire','insightful'].includes(b.type)) return errorResp('Invalid type')
-      await sbFetch(env, 'article_reactions', { method: 'POST', body: { article_id: arMatch[1], type: b.type, ip_hash: ipHash } })
+      // slug 格式时先查 UUID
+      const rawArId = arMatch[1]
+      const isArUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-/.test(rawArId)
+      let articleReactUuid = rawArId
+      if (!isArUuid) {
+        const found = await sbFetch(env, 'articles', { query: `source_name=eq.${rawArId}&select=id` })
+        if (found?.[0]?.id) articleReactUuid = found[0].id
+      }
+      await sbFetch(env, 'article_reactions', { method: 'POST', body: { article_id: articleReactUuid, type: b.type, ip_hash: ipHash } })
       return json({ ok: true })
     }
 
     // ── 文章评论 ─────────────────────────────────────────────────────────────
     const acMatch = path.match(/^articles\/([^/]+)\/comments$/)
     if (acMatch) {
-      const id = acMatch[1]
-      if (method === 'GET') { const d = await sbFetch(env, 'article_comments', { query: 'article_id=eq.'+id+'&is_deleted=eq.false&order=created_at.asc&select=id,parent_id,nickname,content,created_at' }); return json(buildTree(d || [])) }
-      if (method === 'POST') { const b = await request.json() as any; if (!b.nickname?.trim()||!b.content?.trim()) return errorResp('Missing fields'); const d = await sbFetch(env, 'article_comments', { method: 'POST', body: { article_id: id, nickname: b.nickname.trim(), content: b.content.trim().slice(0,2000), parent_id: b.parent_id||null, ip_hash: ipHash } }); return json(d?.[0]||d) }
+      const rawId = acMatch[1]
+      // slug 格式（非 UUID）时，先查 articles 表找到真实 UUID
+      const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-/.test(rawId)
+      let articleUuid = rawId
+      if (!isUuid) {
+        const found = await sbFetch(env, 'articles', { query: `source_name=eq.${rawId}&select=id` })
+        if (!found?.[0]?.id) return errorResp('Article not found', 404)
+        articleUuid = found[0].id
+      }
+      if (method === 'GET') { const d = await sbFetch(env, 'article_comments', { query: 'article_id=eq.'+articleUuid+'&is_deleted=eq.false&order=created_at.asc&select=id,parent_id,nickname,content,created_at' }); return json(buildTree(d || [])) }
+      if (method === 'POST') { const b = await request.json() as any; if (!b.nickname?.trim()||!b.content?.trim()) return errorResp('Missing fields'); const d = await sbFetch(env, 'article_comments', { method: 'POST', body: { article_id: articleUuid, nickname: b.nickname.trim(), content: b.content.trim().slice(0,2000), parent_id: b.parent_id||null, ip_hash: ipHash } }); return json(d?.[0]||d) }
     }
 
     // ── 论坛帖子列表（N+1 修复 + 缓存 2 分钟） ───────────────────────────────
