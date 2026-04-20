@@ -108,13 +108,13 @@ export default function ForumTopicPage() {
 
         <h1 className="text-2xl font-bold mb-3" style={{color:'var(--c-tx)'}}>{topic.title}</h1>
 
-        <div className="flex items-center gap-3 text-sm mb-6" style={{color:'var(--c-tx-m)'}}>
-          <span className="font-medium" style={{color:'var(--c-ac)'}}>{topic.author_nick}</span>
-          <span>{new Date(topic.created_at).toLocaleString('zh-CN')}</span>
-          <span>{topic.view_count + 1} 浏览</span>
-          <div className="ml-auto">
-            <ShareBar url={window.location.href} title={topic.title} />
+        <div className="flex flex-col gap-2 mb-6">
+          <div className="flex items-center gap-3 text-sm" style={{color:'var(--c-tx-m)'}}>
+            <span className="font-medium" style={{color:'var(--c-ac)'}}>{topic.author_nick}</span>
+            <span>{new Date(topic.created_at).toLocaleString('zh-CN')}</span>
+            <span>{topic.view_count + 1} 浏览</span>
           </div>
+          <ShareBar url={window.location.href} title={topic.title} />
         </div>
 
         <div className="prose-dark mb-6">
