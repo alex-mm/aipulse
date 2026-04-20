@@ -207,8 +207,8 @@ export default function ArticleDetailPage() {
     const contentLines = lines.slice(idx).filter(line => {
       const trimmed = line.trim()
       if (trimmed.startsWith('*') && trimmed.endsWith('*') && trimmed.length > 2) return false
-      // 过滤掉独立成行的导航链接行（含 ← 返回xxx / → 分类深度解读 等，支持同行多个链接）
-      if (/\[[\s→←][^\]]*\]\([^)]*\)/.test(trimmed) && /返回|速报|速览|分类|解读|列表/.test(trimmed)) return false
+      // 只过滤整行都是导航链接的行（行首直接是 [→ 或 [← 开头），不过滤列表项里内嵌的链接
+      if (/^\[[\s→←]/.test(trimmed) && /返回|速报|速览|分类|解读|列表/.test(trimmed)) return false
       return true
     })
 
