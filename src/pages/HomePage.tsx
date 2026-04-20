@@ -38,7 +38,8 @@ function cleanArticleContent(content: string): { cleanContent: string; readingMe
   const contentLines = lines.slice(idx).filter(line => {
     const trimmed = line.trim()
     if (trimmed.startsWith('*') && trimmed.endsWith('*') && trimmed.length > 2) return false
-    if (/\[[\s→←][^\]]*\]\([^)]*\)/.test(trimmed) && /返回|速报|速览|分类|解读|列表/.test(trimmed)) return false
+    // 只过滤整行都是导航链接的行（行首直接是 [→ 或 [← 开头），不过滤列表项里内嵌的链接
+    if (/^\[[\s→←]/.test(trimmed) && /返回|速报|速览|分类|解读|列表/.test(trimmed)) return false
     return true
   })
 
@@ -265,18 +266,8 @@ export default function HomePage() {
             </ReactMarkdown>
           </div>
 
-          {/* 底部：查看深度解读入口 */}
-          <div className="mt-8 pt-6 flex items-center justify-between" style={{borderTop:'1px solid var(--c-bd)'}}>
-            <Link
-              to={`/${activeTab}/brief/${currentArticle.id}`}
-              className="flex items-center gap-1.5 text-sm transition-colors"
-              style={{color:'var(--c-ac)'}}
-              onMouseEnter={e => (e.currentTarget.style.opacity='0.8')}
-              onMouseLeave={e => (e.currentTarget.style.opacity='1')}
-            >
-              查看完整页面（含深度解读入口）
-              <ChevronRight size={14} />
-            </Link>
+          {/* 底部：往期回顾入口 */}
+          <div className="mt-8 pt-6 flex items-center justify-end" style={{borderTop:'1px solid var(--c-bd)'}}>
             <Link
               to={`/${activeTab}/brief`}
               className="flex items-center gap-1 text-xs transition-colors"
