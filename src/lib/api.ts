@@ -101,7 +101,14 @@ export async function fetchArticles(params: {
   if (staticArticles) {
     return staticArticles.filter(a => {
       if (params.region && a.region !== params.region) return false
-      if (params.tier && a.tier !== params.tier) return false
+      if (params.tier) {
+        // deep tab 同时匹配 deep 和 category（阵营深读）
+        if (params.tier === 'deep' && !['deep', 'category'].includes(a.tier)) return false
+        // analysis tab 同时匹配 analysis 和 item（单条深析）
+        else if (params.tier === 'analysis' && !['analysis', 'item'].includes(a.tier)) return false
+        // 其他 tier 精确匹配
+        else if (params.tier !== 'deep' && params.tier !== 'analysis' && a.tier !== params.tier) return false
+      }
       return true
     })
   }
