@@ -41,6 +41,11 @@ function cleanArticleContent(content: string): { cleanContent: string; readingMe
     // 只过滤整行都是导航链接的行（行首直接是 [→ 或 [← 开头），不过滤列表项里内嵌的链接
     if (/^\[[\s→←]/.test(trimmed) && /返回|速报|速览|分类|解读|列表/.test(trimmed)) return false
     return true
+  }).map(line => {
+    // 去掉列表项末尾的来源链接和「→ 单条解读」内嵌链接（如：— [来源](url) ｜ [→ 单条解读](url)）
+    return line
+      .replace(/\s*[—–-]\s*\[([^\]]+)\]\([^)]*\)(\s*[｜|]\s*\[→[^\]]*\]\([^)]*\))*/g, '')
+      .replace(/\s*[｜|]\s*\[→[^\]]*\]\([^)]*\)/g, '')
   })
 
   const normalizedLines = contentLines.map(line => {
