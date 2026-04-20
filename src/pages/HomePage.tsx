@@ -187,7 +187,7 @@ export default function HomePage() {
         }}>
           <button
             onClick={() => setActiveTab('overseas')}
-            className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-sm font-medium transition-all"
+            className="flex items-center gap-1 sm:gap-1.5 px-3 sm:px-4 py-1.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap"
             style={activeTab === 'overseas' ? {
               background: 'rgba(56,189,248,0.15)',
               color: '#38bdf8',
@@ -197,12 +197,12 @@ export default function HomePage() {
               border: '1px solid transparent',
             }}
           >
-            <Globe size={13} />
+            <Globe size={12} />
             海外动态
           </button>
           <button
             onClick={() => setActiveTab('domestic')}
-            className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-sm font-medium transition-all"
+            className="flex items-center gap-1 sm:gap-1.5 px-3 sm:px-4 py-1.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap"
             style={activeTab === 'domestic' ? {
               background: 'rgba(244,114,182,0.15)',
               color: '#f472b6',
@@ -212,25 +212,25 @@ export default function HomePage() {
               border: '1px solid transparent',
             }}
           >
-            <Cpu size={13} />
+            <Cpu size={12} />
             国内动态
           </button>
         </div>
 
-        {/* 期号 + 往期回顾 */}
-        <div className="flex items-center gap-3">
+        {/* 期号（移动端隐藏）+ 往期回顾 */}
+        <div className="flex items-center gap-2">
           {editionLabel && (
-            <span className="text-xs" style={{color:'var(--c-tx-d)'}}>{editionLabel}</span>
+            <span className="hidden sm:inline text-xs" style={{color:'var(--c-tx-d)'}}>{editionLabel}</span>
           )}
           <Link
             to={`/${activeTab}/brief`}
-            className="flex items-center gap-1 text-xs transition-colors"
+            className="flex items-center gap-1 text-xs transition-colors whitespace-nowrap"
             style={{color:'var(--c-tx-m)'}}
             onMouseEnter={e => (e.currentTarget.style.color='var(--c-ac)')}
             onMouseLeave={e => (e.currentTarget.style.color='var(--c-tx-m)')}
           >
             <Clock size={11} />
-            往期回顾
+            往期
             <ChevronRight size={11} />
           </Link>
         </div>
@@ -244,14 +244,12 @@ export default function HomePage() {
             {currentArticle.title.replace(/\s*[|｜]\s*.+$/, '').trim()}
           </h1>
 
-          {/* meta 信息（时间周期 / 来源等） */}
+          {/* 时间周期 + 其他 meta */}
           {readingMeta && (
-            <div className="mb-4">
-              {readingMeta.split('\n')
-                .filter(line => !line.includes('时间窗口'))
-                .map((line, i) => (
-                  <p key={i} className="text-xs leading-relaxed" style={{color:'var(--c-tx-d)'}}>{line}</p>
-                ))}
+            <div className="mb-4 flex flex-col gap-0.5">
+              {readingMeta.split('\n').map((line, i) => (
+                <p key={i} className="text-xs leading-relaxed" style={{color:'var(--c-tx-d)'}}>{line}</p>
+              ))}
             </div>
           )}
 
