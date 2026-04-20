@@ -79,23 +79,19 @@ export default function ForumTopicPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
-      {/* 面包屑 */}
-      <div className="flex items-center gap-2 text-sm mb-4" style={{color:'var(--c-tx-m)'}}>
-        <Link
-          to="/forum"
-          className="transition-colors"
-          style={{color:'var(--c-tx-m)'}}
-          onMouseEnter={e => (e.currentTarget.style.color='var(--c-ac)')}
-          onMouseLeave={e => (e.currentTarget.style.color='var(--c-tx-m)')}
-        >
-          讨论
-        </Link>
-        <span>/</span>
-        <span style={{color:'var(--c-tx-d)'}}>正文</span>
-      </div>
-
       <article>
-        <div className="flex items-center gap-2 mb-3">
+        {/* 面包屑 + 分类标签同行 */}
+        <div className="flex items-center gap-2 text-sm mb-3">
+          <Link
+            to="/forum"
+            className="transition-colors"
+            style={{color:'var(--c-tx-m)'}}
+            onMouseEnter={e => (e.currentTarget.style.color='var(--c-ac)')}
+            onMouseLeave={e => (e.currentTarget.style.color='var(--c-tx-m)')}
+          >
+            讨论
+          </Link>
+          <span style={{color:'var(--c-tx-d)'}}>·</span>
           <span className="px-2 py-0.5 text-xs rounded-full" style={{
             background: 'var(--c-glow)',
             color: 'var(--c-tx-s)',
