@@ -47,8 +47,8 @@ export default function ForumPage() {
       </div>
 
       {/* Filters */}
-      <div className="flex items-center gap-4 mb-6">
-        <div className="flex items-center gap-1">
+      <div className="flex flex-wrap items-center gap-2 mb-6">
+        <div className="flex items-center gap-1 flex-1 min-w-0 flex-wrap">
           {categories.map(({ key, label, icon: Icon }) => (
             <button
               key={key}
@@ -69,7 +69,7 @@ export default function ForumPage() {
             </button>
           ))}
         </div>
-        <div className="flex items-center gap-1 ml-auto">
+        <div className="flex items-center gap-1 flex-shrink-0">
           <button
             onClick={() => setSort('latest')}
             className="px-3 py-1 text-sm rounded-full transition-colors"
