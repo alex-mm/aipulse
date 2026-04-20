@@ -114,7 +114,7 @@ export default function HomePage() {
   /** 复用 ArticleDetailPage 的 markdownComponents：h2 加阵营深读入口，li 加单条深析入口 */
   const markdownComponents = useMemo(() => ({
     ul: ({ children }: { children?: ReactNode }) => (
-      <ul style={{ paddingLeft: 0, listStyle: 'none' }}>{children}</ul>
+      <ul style={{ paddingLeft: 0, listStyle: 'none', width: '100%', maxWidth: '100%' }}>{children}</ul>
     ),
     h2: ({ children }: { children?: ReactNode }) => {
       const text = extractText(children).toLowerCase()
@@ -146,21 +146,19 @@ export default function HomePage() {
       ) ?? null
       return (
         <li className="mt-3">
-          <div className="flex items-start gap-2 min-w-0">
-            <span className="flex-1 min-w-0 break-words">{children}</span>
-            {matched && (
-              <Link
-                to={`/${matched.region}/${matched.tier}/${matched.id}`}
-                className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium no-underline whitespace-nowrap flex-shrink-0 mt-0.5 transition-all cursor-pointer"
-                style={{ background: 'rgba(251,191,36,0.1)', color: '#fbbf24', border: '1px solid rgba(251,191,36,0.3)' }}
-                onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(251,191,36,0.22)'; el.style.borderColor = 'rgba(251,191,36,0.6)' }}
-                onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(251,191,36,0.1)'; el.style.borderColor = 'rgba(251,191,36,0.3)' }}
-              >
-                <Microscope size={10} />
-                深析 →
-              </Link>
-            )}
-          </div>
+          {matched && (
+            <Link
+              to={`/${matched.region}/${matched.tier}/${matched.id}`}
+              className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium no-underline whitespace-nowrap transition-all cursor-pointer float-right ml-2 mt-0.5"
+              style={{ background: 'rgba(251,191,36,0.1)', color: '#fbbf24', border: '1px solid rgba(251,191,36,0.3)' }}
+              onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(251,191,36,0.22)'; el.style.borderColor = 'rgba(251,191,36,0.6)' }}
+              onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(251,191,36,0.1)'; el.style.borderColor = 'rgba(251,191,36,0.3)' }}
+            >
+              <Microscope size={10} />
+              深析 →
+            </Link>
+          )}
+          <span>{children}</span>
         </li>
       )
     },
